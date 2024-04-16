@@ -1,5 +1,15 @@
 # Utility Tree
 
+<!-- TODO 
+write business scenarios
+"Business goals are exemplified by quality attribute scenarios."
+
+use the current scenarios for
+Acceptance plan & technical performance monitoring
+-->
+
+<!-- TODO business value, technical risks-->
+
 ## Glossary
 
 - CI:
