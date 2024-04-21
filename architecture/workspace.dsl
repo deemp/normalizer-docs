@@ -7,7 +7,7 @@ workspace {
 
     model {
         user = person "Developer" {
-            description "Uses Maven to build and optimize Java applications."
+            description "Develops Java applications."
             tags "Developer"
         }
         
