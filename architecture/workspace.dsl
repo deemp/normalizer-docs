@@ -1,6 +1,10 @@
 !constant IMPORTS "Imports"
 !constant USES_FUNCTIONS_FROM "Uses functions from"
 
+// TODO 
+// user supplies rules
+// user creates atoms
+
 workspace {
 
     !identifiers hierarchical
@@ -17,15 +21,15 @@ workspace {
             tags "Application"
         }
                     
-        filesystem = softwareSystem "File System" {
+        filesystem = softwareSystem "Files" {
             description "Stores files."
             
-            tags "File System"
+            tags "Files"
             
             group "Apache Maven JAR Plugin outputs" {
                 javaCompilerOutput = container "jar:jar output" {
                     description "Java bytecode"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
             }
@@ -33,48 +37,46 @@ workspace {
             group "Intermediate optimization outputs" {
                 jeoDisassembleOutput = container "jeo:disassemble output" {
                     description "XMIR files"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 opeoDecompileOutput = container "opeo:decompile output" {
                     description "XMIR files with high-level EO code"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 eoPhiOutput = container "eo:phi output" {
                     description "PHI code"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 normReduceOutput = container "norm:reduce output" {
                     description "PHI code"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 ineoFuseOutput = container "ineo:fuse output" {
                     description "PHI code"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 eoUnphiOutput = container "eo:unphi output" {
                     description "XMIR files with high-level EO code"
-                    tags "File System"
+                    tags "Files"
                     technology "Files"
                 }
                 opeoCompileOutput = container "opeo:compile output" {
                     description "XMIR files with low-level EO code"
-                    tags "File System"
+                    tags "Files"
+                    technology "Files"
+                }
+                xmirToBytecodeOutput = container "jeo:xmir-to-bytecode output" {
+                    description "Java bytecode"
+                    tags "Files"
                     technology "Files"
                 }
             }
             
-            group "Final optimization outputs" {
-                xmirToBytecodeOutput = container "jeo:xmir-to-bytecode output" {
-                    description "Java bytecode"
-                    tags "File System"
-                    technology "Files"
-                }
-            }
         }
         
         orgEolang = softwareSystem "org.eolang" {
@@ -301,19 +303,19 @@ workspace {
             jeoDisassemble = container "jeo:disassemble" {
                 description "Converts Java bytecode binary files to XMIR files with low-level EO code that has `opcode` atoms."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
             }
       
             opeoDecompile = container "opeo:decompile" {
                 description "Takes XMIR files with low-level EO code and transforms combinations of `opcode` atoms into EO objects. Produces XMIR files with high-level EO code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
             }
       
             eoPhi = container "eo:xmir-to-phi" {
                 description "Converts XMIR files with high-level EO code to files with PHI code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
                 
                 -> orgEolang.eoMavenPlugin "Uses"
             }
@@ -321,7 +323,7 @@ workspace {
             normReduce = container "norm:reduce" {
                 description "Evaluates and rewrites PHI code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
                 
                 -> normalizer "Uses"
             }
@@ -329,13 +331,13 @@ workspace {
             ineoFuse = container "ineo:fuse" {
                 description "Optimizes PHI code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
             }
             
             eoUnphi = container "eo:phi-to-xmir" {
                 description "Converts PHI code to XMIR files with high-level EO code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
                 
                 -> orgEolang.eoMavenPlugin "Uses"
             }
@@ -343,13 +345,13 @@ workspace {
             opeoCompile = container "opeo:compile" {
                 description "Converts XMIR files with high-level EO code to XMIR files with low-level EO code."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
             }
             
             xmirToBytecode = container "jeo:xmir-to-bytecode" {
                 description "Converts XMIR files with low-level EO code to Java bytecode."
                 technology "Maven goal"
-                tags "Maven Goal"
+                tags "Maven goal"
             }
             
 
@@ -380,11 +382,13 @@ workspace {
         maven -> optimizationPlugin "Executes"
         optimizationPlugin -> filesystem "Reads from"
         optimizationPlugin -> filesystem "Writes to"
+        normalizer.modules.Main -> filesystem.eoPhiOutput "Reads" 
+        normalizer.modules.Main -> filesystem.normReduceOutput "Writes" 
     }
 
     views {
         
-        systemContext optimizationPlugin {
+        systemContext optimizationPlugin "OptimizationStatic" {
             include *
             include user
             exclude jeoDisassemble_javaCompilerOutput
@@ -403,8 +407,6 @@ workspace {
             exclude opeoCompile_opeoCompileOutput
             exclude xmirToBytecode_opeoCompileOutput
             exclude xmirToBytecode_xmirToBytecodeOutput
-            
-            autolayout lr
         }        
         
         container optimizationPlugin "StaticView" {
@@ -427,17 +429,13 @@ workspace {
             include filesystem.opeoCompileOutput
             
             // TODO fix layout
-            
-            // fix: bad layout if mismatched number of elements in optimization plugin and filesystem groups
             // include filesystem.xmirToBytecodeOutput
-            
-            // fix: the pipeline is right-to-left
-            
-            autoLayout lr
+                        
+            autoLayout tb
         }
         
         dynamic optimizationPlugin "DynamicView" {
-            title "Plugin pipeline workflow"
+            title "Plugin workflow"
             
             optimizationPlugin.jeoDisassemble -> filesystem.javaCompilerOutput "Reads"
             optimizationPlugin.jeoDisassemble -> filesystem.jeoDisassembleOutput "Writes"
@@ -457,11 +455,9 @@ workspace {
             
                     
             // TODO fix layout
-            
-            // fix: bad layout if mismatched number of elements in optimization plugin and filesystem groups
             // optimizationPlugin.xmirToBytecode -> filesystem.xmirToBytecodeOutput "Writes"
                         
-            autoLayout lr
+            autoLayout tb
         }
         
         
@@ -471,24 +467,21 @@ workspace {
             include normalizer.modules.Language_EO_Phi_Rules_Common
             include normalizer.modules.Language_EO_Phi_Rules_Yaml
             include normalizer.modules.Language_EO_Phi_Dataize
-            
+                        
             autoLayout lr
         }
                 
         dynamic normalizer.dataize {
             title "Dataization workflow"
             
+            normalizer.modules.Main -> filesystem.eoPhiOutput "Reads" 
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi "Parses input program via"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Rules_Yaml "Parses rules via"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Rules_Common "Applies rules via"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Dataize "Dataizes via"
+            normalizer.modules.Main -> filesystem.normReduceOutput "Writes" 
             
-            // include normalizer.modules.Main
-            // include normalizer.modules.Language_EO_Phi
-            // include normalizer.modules.Language_EO_Phi_Rules_Common
-            // include normalizer.modules.Language_EO_Phi_Dataize
-            
-            autoLayout lr
+            autoLayout tb
         }
         
         systemContext normalizer {
@@ -498,7 +491,7 @@ workspace {
         
         container normalizer {
             include *
-            autoLayout lr
+            autoLayout tb
         }
         
                 
@@ -545,12 +538,12 @@ workspace {
             autoLayout lr
         }
         
-        systemContext eoc "eoc" {
+        systemContext eoc {
             include *
             autoLayout lr
         }
         
-        container eoc "eoc_container" {
+        container eoc {
             include *
             autoLayout lr
         }
@@ -575,15 +568,16 @@ workspace {
                 background "#0EEBE7"
             }
             
-            element "File System" {
+            element "Files" {
                 shape "Folder"
                 background "#6A5BEE"
                 color "#FFFFFF"
             }
             
-            element "Maven Goal" {
+            element "Maven goal" {
                 background "#FFE733"
                 color "#000000"
+                shape Pipe
             }
             
             element "Maven plugin" {
