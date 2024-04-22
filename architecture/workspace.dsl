@@ -1,5 +1,5 @@
 !constant IMPORTS "Imports"
-!constant USES_FUNCTIONS_FROM "Uses functions from"
+!constant IMPLEMENTED_VIA "Implemented via"
 
 // TODO 
 // user supplies rules
@@ -10,21 +10,19 @@ workspace {
     !identifiers hierarchical
 
     model {
-        user = person "Developer" {
-            description "Develops Java applications."
-            tags "Developer"
-        }
-        
-        maven = softwareSystem "Maven" {
-            description "Build tool for Java projects."
-
-            tags "Application"
-        }
                     
         filesystem = softwareSystem "Files" {
             description "Stores files."
             
             tags "Files"
+            
+            group "User-supplied files" {
+                normalizationRules = container "Normalization rules" {
+                    description "Rules that specify transformations of PHI programs."
+                    tags "Files"
+                    technology "Files"
+                }
+            }
             
             group "Apache Maven JAR Plugin outputs" {
                 javaCompilerOutput = container "jar:jar output" {
@@ -121,14 +119,17 @@ workspace {
             }
             
             -> orgEolang.eoMavenPlugin "Uses"
+            -> filesystem "Uses"
         }
         
         normalizer = softwareSystem normalizer {
             description "Command-line normalizer of PHI code"
             tags "Application"
             
-            modules = container modules {
+            modules = container "Haskell modules" {
+                description "Main modules"
                 tags "Haskell module"
+                technology "Haskell modules"
                 
                 Main = component Main {
                     description "Command-line interface"
@@ -190,6 +191,11 @@ workspace {
                     tags "Haskell module"
                     technology "Haskell module"
                 }
+                Language_EO_Phi_Atoms = component "Language.EO.Phi.Atoms.*" {
+                    description "Definitions of atoms"
+                    tags "Haskell module"
+                    technology "Haskell modules"
+                }
                 Language_EO_Phi_Syntax = component "Language.EO.Phi.Syntax" {
                     description "Functions for pretty-printing of PHI expressions"
                     tags "Haskell module"
@@ -224,6 +230,7 @@ workspace {
             modules.Language_EO_Phi_Dataize -> modules.Language_EO_Phi "${IMPORTS}"
             modules.Language_EO_Phi_Dataize -> modules.Language_EO_Phi_Rules_Common "${IMPORTS}"
             modules.Language_EO_Phi_Dataize -> modules.Language_EO_Phi_Syntax_Abs "${IMPORTS}"
+            modules.Language_EO_Phi_Dataize -> modules.Language_EO_Phi_Atoms "${IMPORTS}"
             
             modules.Language_EO_Phi_Syntax -> modules.Language_EO_Phi_Rules_Common "${IMPORTS}"
             modules.Language_EO_Phi_Syntax -> modules.Language_EO_Phi_Syntax_Abs "${IMPORTS}"
@@ -248,9 +255,9 @@ workspace {
                 tags "Command"
                 
                 -> modules.Main "Implemented in"
-                -> modules.Language_EO_Phi "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Metrics_Collect "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Metrics_Data "${USES_FUNCTIONS_FROM}"
+                -> modules.Language_EO_Phi "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Metrics_Collect "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Metrics_Data "${IMPLEMENTED_VIA}"
             }
             transform = container transform {
                 description "Rewrite PHI code to a normal form"
@@ -258,9 +265,9 @@ workspace {
                 tags "Command"
                 
                 -> modules.Main "Implemented in"
-                -> modules.Language_EO_Phi "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Rules_Common "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Rules_Yaml "${USES_FUNCTIONS_FROM}"
+                -> modules.Language_EO_Phi "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Rules_Common "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Rules_Yaml "${IMPLEMENTED_VIA}"
             }
             dataize = container dataize {
                 description "Dataize PHI code"
@@ -268,10 +275,10 @@ workspace {
                 tags "Command"
                 
                 -> modules.Main "Implemented in"
-                -> modules.Language_EO_Phi "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Rules_Common "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Rules_Yaml "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Dataize "${USES_FUNCTIONS_FROM}"
+                -> modules.Language_EO_Phi "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Rules_Common "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Rules_Yaml "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Dataize "${IMPLEMENTED_VIA}"
             }
             report = container report {
                 description "Generate a report for given PHI programs"
@@ -279,9 +286,9 @@ workspace {
                 tags "Command"
                 
                 -> modules.Main "Implemented in"
-                -> modules.Language_EO_Phi "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Report_Data "${USES_FUNCTIONS_FROM}"
-                -> modules.Language_EO_Phi_Report_Html "${USES_FUNCTIONS_FROM}"
+                -> modules.Language_EO_Phi "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Report_Data "${IMPLEMENTED_VIA}"
+                -> modules.Language_EO_Phi_Report_Html "${IMPLEMENTED_VIA}"
             }
         }
         
@@ -296,6 +303,9 @@ workspace {
             
             tags "Maven plugin"
             
+            
+            optimizationPluginUsesFilesystem = -> filesystem "Uses"
+            optimizationPluginUsesNormalizer = -> normalizer "Uses"
             // Maven goals are denoted as containers because they're separately deployable.
             // E.g., one can run a part of the pipeline.
             // > Essentially, a container is a separately runnable/deployable unit (e.g. a separate process space) that executes code or stores data. - [link](https://c4model.com/)
@@ -325,7 +335,12 @@ workspace {
                 technology "Maven goal"
                 tags "Maven goal"
                 
-                -> normalizer "Uses"
+                normalizerWrapper = component "Normalizer wrapper" {
+                    technology "Java class"
+                    tags "Java class"
+                    
+                    -> normalizer.dataize "Runs with arguments"
+                }
             }
             
             ineoFuse = container "ineo:fuse" {
@@ -360,81 +375,144 @@ workspace {
             // writes files
             // TODO add "uses EO compiler"
             
-            jeoDisassemble_javaCompilerOutput = jeoDisassemble -> filesystem.javaCompilerOutput "Reads"
-            jeoDisassemble_jeoDisassembleOutput = jeoDisassemble -> filesystem.jeoDisassembleOutput "Writes"
-            opeoDecompile_jeoDisassembleOutput = opeoDecompile -> filesystem.jeoDisassembleOutput "Reads"
-            opeoDecompile_opeoDecompileOutput = opeoDecompile -> filesystem.opeoDecompileOutput "Writes"
-            eoPhi_opeoDecompileOutput = eoPhi -> filesystem.opeoDecompileOutput "Reads"
-            eoPhi_eoPhiOutput = eoPhi -> filesystem.eoPhiOutput "Writes"
-            normReduce_eoPhiOutput = normReduce -> filesystem.eoPhiOutput "Reads"
-            normReduce_normReduceOutput = normReduce -> filesystem.normReduceOutput "Writes"
-            ineoFuse_normReduceOutput = ineoFuse -> filesystem.normReduceOutput "Reads"
-            ineoFuse_ineoFuseOutput = ineoFuse -> filesystem.ineoFuseOutput "Writes"
-            eoUnphi_ineoFuseOutput = eoUnphi -> filesystem.ineoFuseOutput "Reads"
-            eoUnphi_eoUnphiOutput = eoUnphi -> filesystem.eoUnphiOutput "Writes"
-            opeoCompile_eoUnphiOutput = opeoCompile -> filesystem.eoUnphiOutput "Reads"
-            opeoCompile_opeoCompileOutput = opeoCompile -> filesystem.opeoCompileOutput "Writes"
-            xmirToBytecode_opeoCompileOutput = xmirToBytecode -> filesystem.opeoCompileOutput "Reads"
-            xmirToBytecode_xmirToBytecodeOutput = xmirToBytecode -> filesystem.xmirToBytecodeOutput "Writes"
+            jeoDisassemble -> filesystem.javaCompilerOutput "Reads"
+            jeoDisassemble -> filesystem.jeoDisassembleOutput "Writes"
+            opeoDecompile -> filesystem.jeoDisassembleOutput "Reads"
+            opeoDecompile -> filesystem.opeoDecompileOutput "Writes"
+            eoPhi -> filesystem.opeoDecompileOutput "Reads"
+            eoPhi -> filesystem.eoPhiOutput "Writes"
+            normReduce -> filesystem.eoPhiOutput "Reads"
+            normReduce -> filesystem.normReduceOutput "Writes"
+            ineoFuse -> filesystem.normReduceOutput "Reads"
+            ineoFuse -> filesystem.ineoFuseOutput "Writes"
+            eoUnphi -> filesystem.ineoFuseOutput "Reads"
+            eoUnphi -> filesystem.eoUnphiOutput "Writes"
+            opeoCompile -> filesystem.eoUnphiOutput "Reads"
+            opeoCompile -> filesystem.opeoCompileOutput "Writes"
+            xmirToBytecode -> filesystem.opeoCompileOutput "Reads"
+            xmirToBytecode -> filesystem.xmirToBytecodeOutput "Writes"
+        }
+          
+        maven = softwareSystem "Maven" {
+            description "Build tool for Java projects."
+
+            tags "Application"
+            
+            -> optimizationPlugin "Executes"
         }
         
-        user -> maven "Uses to build and optimize Java applications"
-        maven -> optimizationPlugin "Executes"
-        optimizationPlugin -> filesystem "Reads from"
-        optimizationPlugin -> filesystem "Writes to"
-        normalizer.modules.Main -> filesystem.eoPhiOutput "Reads" 
+        javaDeveloper = person "Java developer" {
+            description "Develops Java applications."
+            tags "Developer"
+            
+            -> maven "Uses to build and optimize Java applications"
+            -> filesystem "Writes rules for the normalizer to"
+            -> normalizer "Optionally modifies"
+            -> normalizer.modules.Language_EO_Phi_Atoms "Optionally adds atoms"
+            -> normalizer.modules.Language_EO_Phi_Dataize "If added atoms, updates imports and functions"
+        }
+        
+        normalizerDeveloper = person "Normalizer developer" {
+            description "A developer in the Normalizer project."
+            tags "Developer"
+            
+            -> normalizer "Develops"
+            -> filesystem "Writes rules for the normalizer to"
+            -> eoc "Uses"
+            -> normalizer.report "Generates reports on tests via"
+            -> normalizer.metrics "Collects metrics on a program via"
+            -> normalizer.dataize "Dataizes programs via"
+            -> normalizer.transform "Transforms programs via"
+        }
+                
+        normalizer -> filesystem "Uses"
+        
+        normalizer.modules.Main -> filesystem.eoPhiOutput "Reads"
         normalizer.modules.Main -> filesystem.normReduceOutput "Writes" 
+        normalizer.modules.Main -> filesystem.normalizationRules "Reads" 
+        
+        normalizer.metrics -> filesystem "Uses"
+        normalizer.transform -> filesystem "Uses"
+        normalizer.dataize -> filesystem "Uses"
+        normalizer.report -> filesystem "Uses"
+                
+        optimizationPlugin.normReduce -> filesystem "Uses"
     }
 
     views {
         
-        systemContext optimizationPlugin "OptimizationStatic" {
+        systemLandscape optimizationPluginCombined {
+            title "Overview"
+            
             include *
-            include user
-            exclude jeoDisassemble_javaCompilerOutput
-            exclude jeoDisassemble_jeoDisassembleOutput
-            exclude opeoDecompile_jeoDisassembleOutput
-            exclude opeoDecompile_opeoDecompileOutput
-            exclude eoPhi_opeoDecompileOutput
-            exclude eoPhi_eoPhiOutput
-            exclude normReduce_eoPhiOutput
-            exclude normReduce_normReduceOutput
-            exclude ineoFuse_normReduceOutput
-            exclude ineoFuse_ineoFuseOutput
-            exclude eoUnphi_ineoFuseOutput
-            exclude eoUnphi_eoUnphiOutput
-            exclude opeoCompile_eoUnphiOutput
-            exclude opeoCompile_opeoCompileOutput
-            exclude xmirToBytecode_opeoCompileOutput
-            exclude xmirToBytecode_xmirToBytecodeOutput
-        }        
-        
-        container optimizationPlugin "StaticView" {
-            include optimizationPlugin.jeoDisassemble
-            include optimizationPlugin.opeoDecompile
-            include optimizationPlugin.eoPhi
-            include optimizationPlugin.normReduce
-            include optimizationPlugin.ineoFuse
-            include optimizationPlugin.eoUnphi
-            include optimizationPlugin.opeoCompile
-            include optimizationPlugin.xmirToBytecode
+            include javaDeveloper
+            include normalizerDeveloper
             
-            include filesystem.javaCompilerOutput
-            include filesystem.jeoDisassembleOutput
-            include filesystem.opeoDecompileOutput
-            include filesystem.eoPhiOutput
-            include filesystem.normReduceOutput
-            include filesystem.ineoFuseOutput
-            include filesystem.eoUnphiOutput
-            include filesystem.opeoCompileOutput
+            exclude "optimizationPlugin -> filesystem"
+            include optimizationPluginUsesFilesystem
             
-            // TODO fix layout
-            // include filesystem.xmirToBytecodeOutput
-                        
-            autoLayout tb
+            autoLayout lr
         }
         
-        dynamic optimizationPlugin "DynamicView" {
+        systemLandscape optimizationPluginJavaDeveloper {
+            title "Java developer perspective"
+            
+            include *
+            exclude normalizerDeveloper
+            
+            exclude "optimizationPlugin -> filesystem"
+            include optimizationPluginUsesFilesystem
+            
+            exclude orgEolang
+            exclude eoc
+            
+            autoLayout lr
+        }
+        
+        systemLandscape optimizationPluginNormalizerDeveloper {
+            title "Normalizer developer perspective"
+            
+            include *
+            
+            exclude "optimizationPlugin -> filesystem"
+            include optimizationPluginUsesFilesystem
+            
+            exclude javaDeveloper
+            exclude optimizationPlugin
+            exclude maven
+            exclude orgEolang
+            
+            
+            autoLayout lr
+        }
+        
+        systemContext optimizationPlugin {
+            title "[System Context] Optimization plugin"
+            
+            include *
+            
+            exclude "optimizationPlugin -> filesystem"
+            include optimizationPluginUsesFilesystem
+            
+            autoLayout lr
+        }
+        
+        systemContext normalizer {
+            title "[System Context] Normalizer"
+            
+            include filesystem
+            include optimizationPlugin
+            include normalizerDeveloper
+            
+            exclude "optimizationPlugin -> normalizer"
+            exclude "optimizationPlugin -> filesystem"
+            include optimizationPluginUsesFilesystem
+            include optimizationPluginUsesNormalizer
+            
+            autoLayout lr
+        }
+
+        dynamic optimizationPlugin {
             title "Plugin workflow"
             
             optimizationPlugin.jeoDisassemble -> filesystem.javaCompilerOutput "Reads"
@@ -452,10 +530,9 @@ workspace {
             optimizationPlugin.opeoCompile -> filesystem.eoUnphiOutput "Reads"
             optimizationPlugin.opeoCompile -> filesystem.opeoCompileOutput "Writes"
             optimizationPlugin.xmirToBytecode -> filesystem.opeoCompileOutput "Reads"
+            optimizationPlugin.xmirToBytecode -> filesystem.xmirToBytecodeOutput "Writes"
             
-                    
             // TODO fix layout
-            // optimizationPlugin.xmirToBytecode -> filesystem.xmirToBytecodeOutput "Writes"
                         
             autoLayout tb
         }
@@ -467,40 +544,97 @@ workspace {
             include normalizer.modules.Language_EO_Phi_Rules_Common
             include normalizer.modules.Language_EO_Phi_Rules_Yaml
             include normalizer.modules.Language_EO_Phi_Dataize
-                        
+            include normalizer.modules.Language_EO_Phi_Atoms
+            
+            include javaDeveloper
+            
             autoLayout lr
         }
                 
         dynamic normalizer.dataize {
             title "Dataization workflow"
             
-            normalizer.modules.Main -> filesystem.eoPhiOutput "Reads" 
-            normalizer.modules.Main -> normalizer.modules.Language_EO_Phi "Parses input program via"
+            normalizer.modules.Main -> filesystem.normalizationRules "Reads normalization rules from"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Rules_Yaml "Parses rules via"
+            normalizer.modules.Main -> filesystem.eoPhiOutput "Reads input programs from"
+            normalizer.modules.Main -> normalizer.modules.Language_EO_Phi "Parses input programs via"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Rules_Common "Applies rules via"
             normalizer.modules.Main -> normalizer.modules.Language_EO_Phi_Dataize "Dataizes via"
-            normalizer.modules.Main -> filesystem.normReduceOutput "Writes" 
+            normalizer.modules.Main -> filesystem.normReduceOutput "Writes output programs to"
             
             autoLayout tb
         }
         
-        systemContext normalizer {
-            exclude optimizationPlugin
-            autoLayout lr
+        // Less important
+        
+        container optimizationPlugin {
+            include optimizationPlugin.jeoDisassemble
+            include optimizationPlugin.opeoDecompile
+            include optimizationPlugin.eoPhi
+            include optimizationPlugin.normReduce
+            include optimizationPlugin.ineoFuse
+            include optimizationPlugin.eoUnphi
+            include optimizationPlugin.opeoCompile
+            include optimizationPlugin.xmirToBytecode
+            
+            include filesystem.javaCompilerOutput
+            include filesystem.jeoDisassembleOutput
+            include filesystem.opeoDecompileOutput
+            include filesystem.eoPhiOutput
+            include filesystem.normReduceOutput
+            include filesystem.ineoFuseOutput
+            include filesystem.eoUnphiOutput
+            include filesystem.opeoCompileOutput
+            include filesystem.xmirToBytecodeOutput
+            
+            // TODO fix layout
+            
+            autoLayout tb
         }
         
         container normalizer {
-            include *
+            title "[Container] Normalizer developer perspective"
+            
+            include normalizer.transform
+            include normalizer.metrics
+            include normalizer.dataize
+            include normalizer.report
+            include filesystem
+            include normalizerDeveloper
+            
+            exclude "normalizer.modules.Main -> filesystem.eoPhiOutput"
+            exclude "normalizer.modules.Main -> filesystem.normReduceOutput"
+            exclude "normalizer.modules.Main -> filesystem.normalizationRules"            
+            include "optimizationPlugin.normReduce -> filesystem"
+            
+            autoLayout tb
+        }
+        
+        container normalizer {
+            title "[Container] norm:reduce perspective on Normalizer"
+            
+            include normalizer.dataize
+            include filesystem
+            include optimizationPlugin.normReduce
+            
+            exclude "normalizer.modules.Main -> filesystem.eoPhiOutput"
+            exclude "normalizer.modules.Main -> filesystem.normReduceOutput"
+            exclude "normalizer.modules.Main -> filesystem.normalizationRules"            
+            exclude "optimizationPlugin.normReduce -> filesystem"
+            
             autoLayout tb
         }
         
                 
         component normalizer.modules {
             include *
+            
             exclude normalizer.metrics
             exclude normalizer.report
             exclude normalizer.transform
             exclude normalizer.dataize
+            exclude filesystem
+            
             autoLayout lr
         }
 
@@ -533,8 +667,8 @@ workspace {
         }
         
         component optimizationPlugin.normReduce {
-            include optimizationPlugin.normReduce
             include normalizer
+            include optimizationPlugin.normReduce.normalizerWrapper
             autoLayout lr
         }
         
@@ -559,6 +693,16 @@ workspace {
         }
         
         component orgEolang.eoMavenPlugin {
+            include *
+            autoLayout lr
+        }
+        
+        systemContext filesystem {
+            include *
+            autoLayout lr
+        }
+        
+        container filesystem {
             include *
             autoLayout lr
         }
@@ -591,6 +735,11 @@ workspace {
             }
             
             element "Java package" {
+                shape "Component"
+                background "#ADEB0E"
+            }
+            
+            element "Java class" {
                 shape "Component"
                 background "#ADEB0E"
             }
