@@ -1,0 +1,817 @@
+e57c2ed | Danila Danko | 2024-05-03 | fix(normalizer): error about incomplete patterns
+868223a | github-actions[bot] | 2024-05-03 | Update Markdown files
+e31c280 | Nikolai Kudasov | 2024-05-03 | Apply suggestions from code review
+0b56de2 | Danila Danko | 2024-05-02 | feat(site): add quick start
+6d67315 | Danila Danko | 2024-05-02 | fix(site): use celsius.phi in examples
+b8ddec6 | Danila Danko | 2024-05-02 | fix(site): wording
+53e5387 | Danila Danko | 2024-05-02 | fix(site): use more granular common .md-s
+543a86f | Danila Danko | 2024-05-02 | fix(flake): remove sample-program
+2af0d78 | Danila Danko | 2024-04-29 | fix(ci): use macos-12
+c25c371 | github-actions[bot] | 2024-04-29 | Update Markdown files
+63b5eba | Danila Danko | 2024-04-29 | refactor(normalizer): add a named record field in LaTeX
+67a5da6 | Danila Danko | 2024-04-29 | refactor(normalizer): apply hlint suggestion
+878dba5 | Danila Danko | 2024-04-29 | refactor(normalizer): remove long import list
+21e47bb | Danila Danko | 2024-04-29 | refactor(normalizer): derive instances for LaTeX
+2a3ce3c | Danila Danko | 2024-04-29 | fix(normalizer): instance Show for LaTeX
+cef5753 | Danila Danko | 2024-04-29 | refactor(normalizer): add toLatexString with a default implementation
+f80da8b | Danila Danko | 2024-04-29 | refactor(normalizer): use OverloadedStrings in more places
+ced39af | eyihluyc | 2024-04-28 | Add error messages, handle `⊥`, replace `\alpha_X ->` with `X->` (#255)
+3e9b2b8 | github-actions[bot] | 2024-04-26 | Update Markdown files
+8620579 | Danila Danko | 2024-04-25 | fix(ci): pipeline and report configs
+491e332 | github-actions[bot] | 2024-04-25 | Update Markdown files
+a343384 | eyihluyc | 2024-04-25 | Add support for latex output in `transform` and `dataize --chain` (#255)
+11b599d | Abdelrahman Abounegm | 2024-04-24 | Remove redundant GHC option
+f92ce7c | Abdelrahman Abounegm | 2024-04-24 | Fix unit tests for substitution
+33045f8 | Abdelrahman Abounegm | 2024-04-24 | Add rule to match positional args in application
+7780e05 | Danila Danko | 2024-04-24 | chore(eo): update 0.36.0 -> 0.37.0
+45dbed6 | Danila Danko | 2024-04-22 | feat(flake): add mdbook-linkcheck to the default devshell
+dceb0ab | Danila Danko | 2024-04-22 | feat(flake): scripts for working with site docs
+0659383 | Danila Danko | 2024-04-22 | fix(ci): mdbook output directory
+4106357 | Danila Danko | 2024-04-20 | fix(ci): use official mdsh repo
+3c1fea7 | Danila Danko | 2024-04-20 | fix(ci): typo in a commit message
+55fd2c2 | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
+752697f | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
+85fe7c1 | Nikolai Kudasov | 2024-04-19 | Add more dataization tests
+1eff2fc | Nikolai Kudasov | 2024-04-19 | Fix rho-injection when empty rho is present
+756dcb7 | Nikolai Kudasov | 2024-04-19 | Revert removal of dataization for dispatch and application, leave comment
+3555e10 | Nikolai Kudasov | 2024-04-19 | Remove redundant imports
+136bf69 | Nikolai Kudasov | 2024-04-19 | Update the rule for dispatch
+f219c17 | Nikolai Kudasov | 2024-04-19 | Implement this-substitution with rho-injection
+db245b8 | Nikolai Kudasov | 2024-04-19 | Fix context handling for Package atom, do not dataize inside dispatch/application
+1be139e | Nikolai Kudasov | 2024-04-19 | Do not apply rewriting inside abstract objects
+4a8292b | Nikolai Kudasov | 2024-04-19 | Add this-substitution to the syntax
+28dd141 | Nikolai Kudasov | 2024-04-19 | Remove missing export list warning
+ccf7ae8 | Nikolai Kudasov | 2024-04-19 | Silent nix-on-path warning
+6b98ee6 | Danila Danko | 2024-04-18 | fix(ci): always build with optimizations to make tests run faster
+004958b | Danila Danko | 2024-04-18 | fix(ci): first run pipeline, then update files
+854cc7b | Danila Danko | 2024-04-18 | fix(ci): set github_token
+d2c9b95 | Danila Danko | 2024-04-18 | fix(ci): set eo version
+63768b6 | Danila Danko | 2024-04-18 | fix(scripts>pipeline): generate report earlier
+8ea5578 | Danila Danko | 2024-04-18 | refactor(site): running pipeline
+45b6083 | Danila Danko | 2024-04-18 | refactor(site): installation instructions
+dad261b | Danila Danko | 2024-04-18 | feat(site): add yq to required pipeline dependencies
+ead0af8 | Danila Danko | 2024-04-18 | feat(scripts > pipeline): update normalizer phi data files
+c27fbb6 | Danila Danko | 2024-04-18 | fix(ci): pipeline script writes eo-phi-normalizer data files
+442661e | Danila Danko | 2024-04-18 | try(ci): don't provide GITHUB_TOKEN
+f18a1ff | Danila Danko | 2024-04-18 | feat(flake): add normalizer to default scripts
+22ce23b | Danila Danko | 2024-04-18 | feat(flake): show hls and cabal in the default devshell
+ccd429b | Danila Danko | 2024-04-18 | feat(flake): add java to devshell
+71a2e81 | Danila Danko | 2024-04-18 | fix(flake): update devshell to allow null values in buildInputs
+1783fdb | Danila Danko | 2024-04-18 | fix(flake): disable ghcid and hlint from haskell-flake
+b6de8a4 | Danila Danko | 2024-04-18 | fix(flake): in update-markdown - add description for devshell - disable a shellcheck rule only in the script
+9ae200c | Danila Danko | 2024-04-18 | fix(flake): allow skipping some functions in the pipeline script
+ca8ecc3 | Danila Danko | 2024-04-18 | fix(flake): enable defaults to make autowire work and disable hlint via defaults
+bc18310 | Danila Danko | 2024-04-18 | refactor(scripts): - address shellcheck warnings - don't use shebangs - move code
+48c4310 | Danila Danko | 2024-04-18 | fix(flake): set env variables via a constant
+d04a061 | Danila Danko | 2024-04-18 | refactor(flake): devshells.default config
+197424b | Danila Danko | 2024-04-18 | fix(flakes): set meta for stack-wrapped
+ed0e719 | Danila Danko | 2024-04-18 | refactor(flake): use a constant for the name of the update-markdown script
+aa4b465 | Danila Danko | 2024-04-18 | fix(flake): shellcheck warnings for the update-markdown script
+6533a28 | Danila Danko | 2024-04-18 | refactor(flake): treefmt config
+e4281a4 | Danila Danko | 2024-04-18 | fix(flake): ignore more generated files
+07d5531 | Danila Danko | 2024-04-18 | feat(flake): enable shellcheck in treefmt
+43b5658 | Danila Danko | 2024-04-18 | fix(flake): resolve conflict between hlints from haskell-flake and treefmt
+01eda1d | Danila Danko | 2024-04-18 | refactor(flake): move stack-shell to devShells
+47299f8 | Danila Danko | 2024-04-18 | feat(flake): add yq-go to the default devShell
+451bf85 | Danila Danko | 2024-04-18 | fix(flake): use zimbatm/mdsh
+45beb17 | Danila Danko | 2024-04-17 | refactor(scripts > pipeline): split functions, format, run shellcheck
+444b285 | Danila Danko | 2024-04-17 | fix(scripts > pipeline): calculate eo parser version from the eo-runtime version
+4b054e7 | Danila Danko | 2024-04-17 | fix(pipeline): add --recursive
+25fd955 | github-actions[bot] | 2024-04-16 | Update normalizer data files
+b00b472 | Danila Danko | 2024-04-16 | feat(ci): update, commit and push atoms
+831a24d | Danila Danko | 2024-04-16 | fix(ci): don't try to commit and push when no markdown files to commit
+058caa0 | Danila Danko | 2024-04-16 | refactor(normalizer): move phi programs to the data directory
+cc8f5af | github-actions[bot] | 2024-04-16 | Update Markdown files
+450897e | Danila Danko | 2024-04-16 | fix(normalizer): use a named chunk with setup code
+680ac1c | Danila Danko | 2024-04-16 | fix(normalizer): format with fourmolu
+ce36826 | Danila Danko | 2024-04-16 | fix(ci): use mdbook with plugins
+665a35e | Danila Danko | 2024-04-16 | fix(ci): run pipeline after updating markdown docs
+8349e94 | Danila Danko | 2024-04-16 | fix(ci): also run on master
+5e3d495 | Danila Danko | 2024-04-16 | fix(ci): fail on errors in docs
+dd3458a | Danila Danko | 2024-04-16 | fix(ci): get the latest changes
+387d059 | Danila Danko | 2024-04-16 | refactor(flake): use more "follows" in inputs
+14c3bd2 | Danila Danko | 2024-04-16 | fix(flake): update-markdown script
+307255e | Danila Danko | 2024-04-16 | fix(site): remove command that relies on generated phi
+2934712 | Danila Danko | 2024-04-16 | refactor(normalizer): update code to use PyF
+c4ba73d | Danila Danko | 2024-04-16 | fix(normalizer): switch from string-interpolate to PyF
+575ba1d | Danila Danko | 2024-04-16 | fix(report): metrics sources
+352cab6 | Danila Danko | 2024-04-15 | fix(pipeline): weird printf error
+bff7c00 | Danila Danko | 2024-04-15 | fix(pipeline): enable normalization
+7fb5071 | Danila Danko | 2024-04-15 | fix(proposals): minor errors
+b86fed4 | Danila Danko | 2024-04-15 | refactor(proposals): - fix labels format - add bullet lists
+b6a33a2 | Danila Danko | 2024-04-15 | feat(proposals): mention priority
+6c0f822 | Danila Danko | 2024-04-15 | fix(pipeline): disable report on rust-tests
+ce873f5 | Danila Danko | 2024-04-15 | feat(pipeline): enable bool-tests
+2063355 | Danila Danko | 2024-04-15 | refactor(pipeline): script
+38c6afb | Danila Danko | 2024-04-15 | fix(pipeline): shellcheck warning
+f2a6aaa | Danila Danko | 2024-04-15 | fix(site): rename quick-start to pipeline
+ece63cf | Danila Danko | 2024-04-15 | fix(pipeline): find .phi files
+b4a789c | Danila Danko | 2024-04-15 | fix(pipeline): enable all commands
+1502404 | Danila Danko | 2024-04-15 | fix(pipeline): normalize in parallel
+6ee40d2 | Danila Danko | 2024-04-15 | fix(pipeline): run dataize with dependencies
+aa4022e | Danila Danko | 2024-04-15 | feat(pipeline): check configs match tests
+78def7a | Danila Danko | 2024-04-15 | fix(pipeline): configs
+f723e6d | Danila Danko | 2024-04-15 | chore(pipeline): bump eo version
+26815c1 | Danila Danko | 2024-04-15 | chore(repo): bump eo repo version
+568e34e | Danila Danko | 2024-04-15 | fix(nix): treefmt config
+9a8f824 | Danila Danko | 2024-04-15 | refactor(nix): format flake
+7e85117 | Danila Danko | 2024-04-15 | fix(scripts): shellcheck warnings in pipeline
+18823cf | Danila Danko | 2024-04-15 | chore(nix): update flake.lock
+91e4350 | Danila Danko | 2024-04-15 | fix(nix): add prefixes for scripts
+6b25e1f | Danila Danko | 2024-04-15 | fix(nix): default package and app
+783cad0 | Danila Danko | 2024-04-15 | fix(nix): support stack
+3102393 | Danila Danko | 2024-04-15 | fix(nix): implement mkShellApps locally
+f809bcb | Danila Danko | 2024-04-10 | fix(stack): update resolver
+6322db6 | Danila Danko | 2024-04-10 | fix(cabal.project): list all projects
+27b7a05 | Danila Danko | 2024-04-10 | refactor(flake): - remove unnecessary packages - switch to haskell-flake
+27d0c68 | Nikolai Kudasov | 2024-04-12 | Bump version and update changelog
+79d220e | Nikolai Kudasov | 2024-04-12 | Rollback debug changes
+a5f71f3 | Nikolai Kudasov | 2024-04-12 | Manually fix bytes.phi to have an empty Delta binding
+b4d2422 | Nikolai Kudasov | 2024-04-12 | Fix dataization for Package when expanding via Rule 4
+7019437 | Nikolai Kudasov | 2024-04-12 | Mark generated org.eolang.* phi files as generated
+48128eb | Nikolai Kudasov | 2024-04-12 | Add org.eolang.* dependency files, as generated by EO compiler
+97f4193 | Nikolai Kudasov | 2024-04-12 | Automatically make dependencies into Packages
+55034b5 | Nikolai Kudasov | 2024-04-12 | Update documentation
+df6f284 | Nikolai Kudasov | 2024-04-12 | Remove debug traces
+366543c | Nikolai Kudasov | 2024-04-12 | Add --dependency-file option to support dependency files
+4d7accf | Danila Danko | 2024-04-10 | fix(site): metrics definition and example
+7b6ec40 | Danila Danko | 2024-04-10 | fix(scripts): directories in update-markdown
+c1a2522 | Danila Danko | 2024-04-10 | feat(site): add quick start
+9c0e16a | Danila Danko | 2024-04-10 | fix(pipeline): rename directory with non-normalized programs
+dc1ddc6 | Danila Danko | 2024-04-10 | fix(site): invalid link
+2cb3c0a | Danila Danko | 2024-04-10 | feat(site): enable linkcheck
+4aa4340 | Danila Danko | 2024-04-10 | fix(site): typo
+634044c | Danila Danko | 2024-04-10 | feat(flake): add mdbook-linkcheck to devshell
+1bac44f | Danila Danko | 2024-04-10 | fix(site): remove alias
+128825e | Danila Danko | 2024-04-10 | fix(site): - unicode -> mathjax in introduction - file paths
+fe0991c | Danila Danko | 2024-04-10 | fix(site): titles
+d1aaef0 | Danila Danko | 2024-04-10 | refactor(site): move files
+2acf856 | Danila Danko | 2024-04-10 | feat(site): add a section on updating installed normalizer
+d61c588 | github-actions[bot] | 2024-04-10 | Update Markdown files
+7e0c45d | Danila Danko | 2024-04-10 | fix(ci): commit in the pipeline job
+75317f0 | Danila Danko | 2024-04-08 | feat(ci): create PR with updated Markdown
+d97e23e | Danila Danko | 2024-04-08 | refactor(all): rename script that updates markdown files
+7bea4b8 | Danila Danko | 2024-04-05 | feat(proposals): specify the proposals directory
+6b40d67 | Danila Danko | 2024-04-05 | fix(proposals): - use "must" instead of "should" - add link to template - use square brackets for labels - expand abbreviations
+38d7bf4 | Nikolai Kudasov | 2024-04-05 | Fix the Chain monad and its use
+88fc4de | Danila Danko | 2024-04-05 | feat(proposals): add readme
+56af0f8 | Danila Danko | 2024-04-05 | feat(proposals): add template
+2fcaf3f | Danila Danko | 2024-04-04 | fix(ci): use official stack-action
+43de3b2 | Danila Danko | 2024-04-04 | fix(ci): add internal files to artifacts
+2c87a2a | Danila Danko | 2024-04-04 | fix(site): format not as a command
+bb728d0 | Danila Danko | 2024-04-04 | fix(site): command option
+accb7ec | Danila Danko | 2024-04-04 | fix(flake): mdsh input
+c99d5c9 | Danila Danko | 2024-04-04 | fix(site): dataless formations definition
+01c58c4 | Danila Danko | 2024-04-04 | feat(normalizer): add more tests for metrics collection
+0ebc87a | Abdelrahman Abounegm | 2024-04-04 | Silence warning related to Aeson Yaml parsing
+e4db7a4 | Abdelrahman Abounegm | 2024-04-04 | Fix package lambda dataization test
+a7dd645 | Abdelrahman Abounegm | 2024-04-04 | Remove incorrect test
+2ed4332 | Abdelrahman Abounegm | 2024-04-04 | Replace redundant dataize functions with runChain
+b6d2be5 | Abdelrahman Abounegm | 2024-04-03 | Add Chain monad and use it in dataization and norm
+29bacaa | Abdelrahman Abounegm | 2024-04-03 | Simplify log message again
+8c9a7a2 | Abdelrahman Abounegm | 2024-04-03 | Remove redundant imports and comments
+b45ca4b | Danila Danko | 2024-04-02 | refactor(normalizer):  drop SpecialDouble
+4112419 | eyihluyc | 2024-04-03 | Fix hlint warnings
+3bde467 | Danila Danko | 2024-04-02 | fix(normalizer): update metrics test
+16954c4 | Danila Danko | 2024-04-02 | fix(normalizer): count dataless
+d293c65 | Danila Danko | 2024-04-02 | fix(normalizer): update .cabal
+335d7a6 | Danila Danko | 2024-04-02 | fix(normalizer): use SafeDouble instead of SafeNumber
+a67bd37 | Danila Danko | 2024-04-02 | refactor(normalizer): don't save space
+63e20b3 | Danila Danko | 2024-04-02 | fix(site): path to rules
+91cc94f | Nikolai Kudasov | 2024-04-01 | Fix dataize (applyRules and context passing), --chain is still broken
+fd251c3 | Abdelrahman Abounegm | 2024-03-29 | Document the change to lambda package dataization
+432ccb5 | Abdelrahman Abounegm | 2024-03-29 | Use first normalization chain instead of requiring exactly one
+f823ffe | Abdelrahman Abounegm | 2024-03-29 | Prevent dataizing objects with empty bindings
+9da48e9 | Danila Danko | 2024-03-27 | fix(metrics):
+e28fee9 | Danila Danko | 2024-03-27 | fix(metrics): treat NaN as infinity
+47acd72 | Danila Danko | 2024-03-27 | feat(report): add doctest
+0b50380 | Danila Danko | 2024-03-27 | feat(metrics): derive more instances for percent
+2557e9b | Abdelrahman Abounegm | 2024-03-27 | Support chain dataization of Package
+9202aea | Abdelrahman Abounegm | 2024-03-27 | Add back lambda package in bindings
+64fab18 | Danila Danko | 2024-03-27 | feat(site > contributing): document how we generate, format, and update docs
+045c712 | Abdelrahman Abounegm | 2024-03-27 | Add draft for proper lambda package handling
+46b20c5 | Abdelrahman Abounegm | 2024-03-27 | Support partial dataization result in tests
+83666c5 | Danila Danko | 2024-03-26 | fix(doctests): exclude unused generated module
+3bc4445 | Danila Danko | 2024-03-26 | fix(normalizer): doctests
+ad69755 | Danila Danko | 2024-03-26 | fix(package): in the hie file, make items for tests
+9601e20 | Danila Danko | 2024-03-26 | fix(package): run alex and happy in custom-setup
+db1d4ed | Danila Danko | 2024-03-26 | feat(package): add doctests module
+d9e7988 | Danila Danko | 2024-03-26 | feat(package): add string-interpolate to custom-setup
+5cba100 | Danila Danko | 2024-03-26 | feat(package): add doctests
+ead9550 | Danila Danko | 2024-03-26 | fix(package): set file-embed lower bound
+dc27701 | Danila Danko | 2024-03-26 | refactor(package): dependencies format
+8630a1a | Danila Danko | 2024-03-26 | feat(site): show icon with github link
+70718cd | Danila Danko | 2024-03-26 | feat(site): add links to
+b839027 | Danila Danko | 2024-03-26 | fix(normalizer package): copyright
+9b849d2 | Danila Danko | 2024-03-26 | feat(ci): install normalizer
+d1fcfa9 | Danila Danko | 2024-03-26 | feat(ci): commit and push changes produced by mdsh
+140461c | Danila Danko | 2024-03-26 | refactor(site): move celsius example
+a5224a9 | Danila Danko | 2024-03-26 | fix(site): stack resolver
+f05f9f3 | Danila Danko | 2024-03-26 | feat(node package): add .prettierignore
+0b4bf8a | Danila Danko | 2024-03-26 | feat(node package): add prettier
+8af58cc | Danila Danko | 2024-03-26 | feat(ci): run mdsh
+f9afe27 | Danila Danko | 2024-03-26 | refactor(ci): split step
+402982a | Danila Danko | 2024-03-26 | fix(ci): set cache prefix
+6fb7577 | Danila Danko | 2024-03-26 | fix(ci): set cache
+74f2736 | Danila Danko | 2024-03-26 | feat(scripts): add script to run mdsh
+dbd7e7b | Danila Danko | 2024-03-26 | feat(flake): write mdsh script
+7bb7710 | Abdelrahman Abounegm | 2024-03-26 | Use correct MathJax markdown syntax
+781c60d | Danila Danko | 2024-03-26 | refactor(report):
+57f00ff | Danila Danko | 2024-03-26 | feat(report config): add expected improved programs percentage
+b08c40c | Danila Danko | 2024-03-26 | refactor(cli): report config fields initialization
+fa1a936 | Danila Danko | 2024-03-26 | feat(report, cli): allow to configure expected improved programs percentage
+091817d | Danila Danko | 2024-03-26 | refactor(report): move Percent instances
+8b88abd | Danila Danko | 2024-03-26 | fix(report): metrics change type
+3019259 | Nikolai Kudasov | 2024-03-26 | Bump version, update changelog
+a77c329 | Danila Danko | 2024-03-25 | feat(site): provide a link to docs about math expressions syntax
+24e2f9d | Danila Danko | 2024-03-25 | feat(site): enable mathjax
+fa4e5ce | Danila Danko | 2024-03-25 | fix(ci): extend and format job summary
+deccf61 | Danila Danko | 2024-03-25 | fix(report): remove the details tag from markdown reports
+baf7ed2 | Danila Danko | 2024-03-25 | fix(ci): write runner os in artifact names
+4054880 | Danila Danko | 2024-03-25 | fix(report): text
+6c00ebc | Danila Danko | 2024-03-25 | feat(ci):
+7edfd51 | Danila Danko | 2024-03-25 | fix(ci): upload artifacts on all platforms even if some previous steps failed
+57398c0 | Danila Danko | 2024-03-25 | feat(report):
+5ef32ed | Danila Danko | 2024-03-24 | refactor(ci): move haddock files together with other files
+ec619ca | Danila Danko | 2024-03-24 | fix(ci): disable macos tests and add todos
+af5284e | Danila Danko | 2024-03-24 | feat(ci): use pipeline artifact to deploy the report
+c18c2cd | Danila Danko | 2024-03-24 | fix(ci): use faster stack-action
+4291cf2 | Danila Danko | 2024-03-24 | fix(ci): run haddock as a part of stack setup
+35edf41 | Danila Danko | 2024-03-24 | feat(ci): upload pipeline artifact
+1182c69 | renovate[bot] | 2024-03-24 | chore(deps): update dependency pre-commit to v3.7.0
+f387a6f | Danila Danko | 2024-03-23 | feat(ci, report): generate a job summary
+fb1bb40 | Danila Danko | 2024-03-24 | feat(site): add docs for the report command
+d797f3a | Danila Danko | 2024-03-24 | fix(report): remove config input
+c5be8b3 | Danila Danko | 2024-03-24 | feat(report, cli): support optional input and output in report config
+78c87f8 | Danila Danko | 2024-03-24 | feat(report): add embedded js and css files
+eb2977f | Danila Danko | 2024-03-24 | feat(package): add report js and css files to extra-source-files
+361ce95 | Danila Danko | 2024-03-24 | feat(report): move report js and css inside package
+b17ce84 | Danila Danko | 2024-03-24 | feat(package): add file-embed
+623734c | Danila Danko | 2024-03-24 | refactor(cli, report): update terminology - refer to initial and normalized phi programs
+0986d9a | Danila Danko | 2024-03-24 | fix(report): class name
+d52ed76 | Danila Danko | 2024-03-24 | fix(report): description
+69de37a | Danila Danko | 2024-03-24 | fix(report): use 'not applicable' instead of 'nan'
+fde9b17 | Danila Danko | 2024-03-23 | fix(report): metric name
+e24d103 | Danila Danko | 2024-03-23 | fix(test): formatting
+d8f95ef | Danila Danko | 2024-03-23 | fix(test): imports
+ec3afca | Danila Danko | 2024-03-23 | fix(cli): formatting issue
+1971831 | Danila Danko | 2024-03-23 | refactor(report): provide table description
+1a86006 | Danila Danko | 2024-03-23 | fix(report): gitignore reports
+6fcd2a2 | Danila Danko | 2024-03-23 | fix(package): update cabal file
+8d0f1c1 | Danila Danko | 2024-03-23 | fix(cli): write json, html, and markdown reports
+7c3a85f | Danila Danko | 2024-03-23 | fix(report): support markdown output
+98d8cad | Danila Danko | 2024-03-23 | refactor(report): use uppercase letters in table head
+cac8a76 | Danila Danko | 2024-03-23 | fix(report): import
+218736e | Danila Danko | 2024-03-23 | fix(cli): remove unused option
+8f06471 | Danila Danko | 2024-03-23 | fix(report): config
+f1fc195 | Danila Danko | 2024-03-23 | fix(report): config format
+a813e7f | Danila Danko | 2024-03-23 | fix(report): imports
+17b47fb | Danila Danko | 2024-03-23 | refactor(metrics): split into modules
+055f169 | Danila Danko | 2024-03-23 | refactor(metrics): add fractional instance for safenumber
+6dda973 | Danila Danko | 2024-03-22 | refactor(cli): formatting issue
+76ed34a | Danila Danko | 2024-03-22 | feat(package): add scientific
+a78af23 | Danila Danko | 2024-03-22 | fix(cli): update functions
+a51f344 | Danila Danko | 2024-03-22 | fix(report): show percents
+396a928 | Danila Danko | 2024-03-22 | fix(metrics): division
+2d8a64f | Danila Danko | 2024-03-22 | fix(metrics): json instances
+84679d0 | Danila Danko | 2024-03-22 | refactor(report html):
+6e6bc66 | Danila Danko | 2024-03-22 | refactor(report):
+856285c | Danila Danko | 2024-03-22 | refactor(metrics): use safe numbers
+e04a5e0 | Danila Danko | 2024-03-21 | feat(report): bundle html, js, and css
+f18e21f | Danila Danko | 2024-03-21 | refactor(report): provide toString function
+5d61f5a | Danila Danko | 2024-03-21 | refactor(report):
+a34669d | Danila Danko | 2024-03-21 | refactor(report): format with another fourmolu version
+069fa6c | Danila Danko | 2024-03-21 | fix(report): gitignore any json
+abe73f3 | Danila Danko | 2024-03-21 | fix(report): directory
+70676b3 | Danila Danko | 2024-03-21 | feat(pipeline): add step to generate a report
+5e8febe | Danila Danko | 2024-03-21 | refactor(pipeline): improve message printing
+98be85f | Danila Danko | 2024-03-21 | refactor(report): rename config file
+bcf595f | Danila Danko | 2024-03-21 | fix(metrics): remove the metrics script because the report command can generate json metrics
+9079eaa | Danila Danko | 2024-03-21 | feat(report): gitignore report.json
+3c6f1c8 | Danila Danko | 2024-03-21 | fix(report): move directory
+f84da06 | Danila Danko | 2024-03-21 | fix(report): config
+f41fc30 | Danila Danko | 2024-03-21 | feat(cli): write json report if path is specified
+e70b88a | Danila Danko | 2024-03-21 | fix(cli):
+cbcaa81 | Danila Danko | 2024-03-21 | fix(report): field names
+c1f5cb9 | Danila Danko | 2024-03-21 | feat(report): make json instances for report
+de1d4ab | Danila Danko | 2024-03-21 | feat(report): optional json report path
+c074608 | Danila Danko | 2024-03-21 | refactor(report): group page-related config keys
+eddc31e | Danila Danko | 2024-03-21 | fix(report): apply autoprefixer
+7143dc8 | Danila Danko | 2024-03-21 | fix(report): align headers by center
+a723402 | Danila Danko | 2024-03-21 | feat(report):
+074a6de | Danila Danko | 2024-03-21 | feat(report): add config for report
+a2ec2a8 | Danila Danko | 2024-03-21 | feat(cli): add command to generate a report
+f2070de | Danila Danko | 2024-03-21 | chore(cabal): update .cabal
+d31e4a9 | Danila Danko | 2024-03-21 | refactor(report): split into two modules
+af90da8 | Danila Danko | 2024-03-21 | feat(report): support conversion to html
+e6f6d4e | Danila Danko | 2024-03-21 | feat(package): add blaze
+09eae8d | Danila Danko | 2024-03-21 | refactor(metrics): give a more descriptive function name
+8f68046 | Danila Danko | 2024-03-21 | fix(metrics): fromInteger
+57a9e6a | Danila Danko | 2024-03-21 | fix(metrics): division
+67c6c38 | Danila Danko | 2024-03-20 | refactor(metrics): generalize the metrics type
+1d68517 | Danila Danko | 2024-03-19 | feat(report): add module
+47acd23 | Abdelrahman Abounegm | 2024-03-22 | Add dataization tests
+8df9af4 | Abdelrahman Abounegm | 2024-03-22 | Ignore the lambda package
+f8324c0 | Abdelrahman Abounegm | 2024-03-22 | Add documentation for the dataization subcommand
+a6697d2 | Danila Danko | 2024-03-21 | fix(vscode settings): use external fourmolu
+afbbccd | Danila Danko | 2024-03-19 | refactor(cli): remove shadowing function
+def87fd | Danila Danko | 2024-03-18 | fix(metrics tests): update metrics format
+1bb2d80 | Danila Danko | 2024-03-18 | fix(phiSpec): update metrics functions
+ee70a05 | Danila Danko | 2024-03-18 | refactor(metrics): use custom parser for BindingsByPathMetrics
+e9a2eda | Danila Danko | 2024-03-18 | refactor(metrics): move splitStringOn
+24784b1 | Danila Danko | 2024-03-18 | fix(package): add template-haskell to deps
+7451f04 | Danila Danko | 2024-03-18 | refactor(metrics): use TH
+4b37bde | Danila Danko | 2024-03-17 | refactor(cli): don't die
+08d305e | Danila Danko | 2024-03-17 | refactor(cli): throw when could not read a program
+521d95d | Danila Danko | 2024-03-17 | refactor(cli): use specific exceptions
+f2643ed | Danila Danko | 2024-03-16 | refactor(cli): get metrics
+9860676 | Danila Danko | 2024-03-16 | refactor(metrics): change arguments order
+1af5704 | Danila Danko | 2024-03-16 | refactor(cli): exception handling
+c2a6ddf | Danila Danko | 2024-03-16 | refactor(cli): use exceptions
+44d5d2b | Danila Danko | 2024-03-16 | refactor(cli): metrics command
+ba83593 | Danila Danko | 2024-03-16 | refactor(cli): allow optional path to bindings
+b989921 | Danila Danko | 2024-03-16 | refactor(metrics): allow optional path
+fa0c048 | Danila Danko | 2024-03-16 | refactor(cli): use more records
+31822e9 | Danila Danko | 2024-03-16 | refactor(cli): get parser context
+6c659d6 | Danila Danko | 2024-03-16 | refactor(cli): use records for commands data
+55b64e1 | Danila Danko | 2024-03-16 | refactor(cli): check file exists
+398678a | Danila Danko | 2024-03-16 | refactor(cli): splitStringOn
+5fc1916 | Danila Danko | 2024-03-15 | feat(scripts): add script to  collect metrics for phi and phi-normalized programs
+0223138 | Danila Danko | 2024-03-15 | fix(site): update docs on the metrics command
+b37cdc1 | Danila Danko | 2024-03-19 | refactor(any): apply hlint suggestions
+94bdd65 | Danila Danko | 2024-03-19 | fix(metrics): update doctests
+217c8de | Danila Danko | 2024-03-19 | chore(site): run mdsh
+efa6035 | Danila Danko | 2024-03-19 | refactor(tests): remove redundant import
+0a367aa | Danila Danko | 2024-03-19 | chore(site): run mdsh
+b0e6b05 | Danila Danko | 2024-03-19 | feat(docs): document bindings-by-path
+b70ed95 | Danila Danko | 2024-03-19 | fix(site): in the sample program, make the top-level attribute attached to a formation
+68fd001 | Danila Danko | 2024-03-19 | fix(metrics test): update test format
+cdec22e | Danila Danko | 2024-03-19 | fix(phiSpec): update metrics functions
+75a8954 | Danila Danko | 2024-03-15 | fix(metrics): collect object and program metrics
+5a663cb | Danila Danko | 2024-03-15 | fix(metrics): collect metrics for an object
+cd78a8f | Danila Danko | 2024-03-15 | feat(metrics): support metrics for bindings by path
+9d1d621 | Abdelrahman Abounegm | 2024-03-18 | Print message in bytes case as well
+9ae5d6a | Abdelrahman Abounegm | 2024-03-18 | Fix dataizing step on application and dispatch
+f219cf7 | Abdelrahman Abounegm | 2024-03-17 | Use the last item of the chain instead of first
+e9ebf30 | Abdelrahman Abounegm | 2024-03-17 | Fix order of log entries
+607f74f | Abdelrahman Abounegm | 2024-03-17 | Include LHS/RHS evaluation in logs chain
+7aaf614 | Abdelrahman Abounegm | 2024-03-15 | Add chain support to dataization too
+49f60d7 | Abdelrahman Abounegm | 2024-03-15 | Attach name to rules and propagate in applications
+21ee538 | Abdelrahman Abounegm | 2024-03-15 | Attach names to rules in context
+8d06409 | Danila Danko | 2024-03-15 | fix(metrics): counting dataless formations
+63f1829 | Danila Danko | 2024-03-13 | refactor(metrics): follow the reviewer comments
+cdf37e0 | Abdelrahman Abounegm | 2024-03-13 | Fix test of rule 5
+29ef54a | Abdelrahman Abounegm | 2024-03-13 | Fix context in tests
+f85ba45 | Abdelrahman Abounegm | 2024-03-13 | Format document with fourmolu
+81dd84f | Abdelrahman Abounegm | 2024-03-13 | Remove comment not in PDD bot format
+f69ad57 | Abdelrahman Abounegm | 2024-03-13 | Improve description of duplicated rules
+96ae007 | Abdelrahman Abounegm | 2024-03-13 | Fix interpolation of Bytes in function evaluation
+953f6fb | Abdelrahman Abounegm | 2024-03-13 | Fix alpha index in dataization of RHS operand
+da43e27 | Abdelrahman Abounegm | 2024-03-13 | Dataize objects in application and dispatch
+1e89f30 | Danila Danko | 2024-03-13 | refactor(metrics): move metrics module
+bc0df01 | Abdelrahman Abounegm | 2024-03-13 | Increase default max depth
+963265c | Danila Danko | 2024-03-13 | refactor(metrics): update hlint config
+e83af0c | Danila Danko | 2024-03-13 | fix(metrics): test metrics
+be79d16 | Danila Danko | 2024-03-13 | fix(metrics): test types
+fd8a30c | Danila Danko | 2024-03-13 | fix(metrics): count dataless formations
+5cf36fc | Abdelrahman Abounegm | 2024-03-12 | Improve error message
+d415691 | Abdelrahman Abounegm | 2024-03-12 | Add cases for matching empty and lambda bindings
+dfe8013 | Abdelrahman Abounegm | 2024-03-12 | Print a message when normalization max depth hit
+1200523 | Abdelrahman Abounegm | 2024-03-12 | Improve dataization normalization error message
+f5a1dad | Abdelrahman Abounegm | 2024-03-12 | Remove redundant imports
+99ad3d4 | Abdelrahman Abounegm | 2024-03-11 | Add meta delta binding for matching bytes
+0c42a94 | Abdelrahman Abounegm | 2024-03-11 | Add conditions related to being inside formation
+ae36383 | Abdelrahman Abounegm | 2024-03-11 | Add `insideFormation` to Context
+7aed7c9 | Abdelrahman Abounegm | 2024-03-11 | Match and colorize formation brackets
+94ca13c | Danila Danko | 2024-03-11 | feat(try-unphi): gitignore try-unphi
+cef72da | Danila Danko | 2024-03-11 | refactor(try-unphi): remove test.* files when initializing .eoc
+2de371c | Danila Danko | 2024-03-11 | fix(try-unphi): convert only programs from phi
+ba96a0e | Danila Danko | 2024-03-11 | fix(try-unphi): use cp
+a51c9f0 | Danila Danko | 2024-03-11 | fix(try-unphi): update EO
+9a31076 | Danila Danko | 2024-03-07 | fix: update eo submodule to 0.35.8
+24a9310 | Abdelrahman Abounegm | 2024-03-06 | Add pattern matches for DeltaEmptyBinding
+343a7c1 | Abdelrahman Abounegm | 2024-03-06 | Add support for empty delta bindings
+d229554 | Abdelrahman Abounegm | 2024-03-05 | Add support for comments in Phi syntax
+13aa9f1 | Danila Danko | 2024-03-07 | fix: switch eo to 0.35.6
+717ad9c | Danila Danko | 2024-03-07 | fix: update EO to 0.35.8
+e147aba | Abdelrahman Abounegm | 2024-03-07 | Enable the first method of dataizing object with φ
+932822d | Danila Danko | 2024-03-07 | fix: disable tests that fail on windows
+560ab49 | Danila Danko | 2024-03-07 | feat: support optional tests
+af31704 | Danila Danko | 2024-03-07 | fix: log message
+6c3fdff | Danila Danko | 2024-03-07 | fix: disable some tests
+0aef90a | Danila Danko | 2024-03-07 | feat: optional "programs" in config
+776ea1e | Danila Danko | 2024-03-07 | fix:  disable some tests
+bf2b3f1 | Danila Danko | 2024-03-07 | feat: list all eo tests
+7a434a4 | Abdelrahman Abounegm | 2024-03-07 | Add CLI subcommand for dataization
+3fce663 | Abdelrahman Abounegm | 2024-03-07 | Implement dataization functions
+178945c | Danila Danko | 2024-03-07 | fix: "find" command arguments
+6cf27b4 | Danila Danko | 2024-03-07 | fix: remove add_metas, fix "find" command
+3d83dd2 | Danila Danko | 2024-03-06 | fix: use cross-platform commands
+a179200 | Danila Danko | 2024-03-06 | fix: eo version
+c2a5af1 | Danila Danko | 2024-03-06 | feat: don't fail-fast in pipeline
+564a5d0 | Danila Danko | 2024-03-06 | fix: disable tmate
+1f156de | Danila Danko | 2024-03-06 | fix: upgrade eo
+8c1135d | Danila Danko | 2024-03-06 | fix: disable tests on Windows
+e0dde46 | Danila Danko | 2024-03-06 | fix: update eo and unphi
+9a400ba | Abdelrahman Abounegm | 2024-03-06 | Add pattern matches for DeltaEmptyBinding
+23fd4fe | Abdelrahman Abounegm | 2024-03-06 | Add support for empty delta bindings
+0d8cbcd | Abdelrahman Abounegm | 2024-03-05 | Add support for comments in Phi syntax
+0637f1c | Danila Danko | 2024-03-05 | try: debug stack-action
+32501dc | Danila Danko | 2024-03-05 | try: set LC_ALL
+ea83b7b | Danila Danko | 2024-03-05 | fix: use LC_ALL everywhere
+502966a | Danila Danko | 2024-03-05 | fix: checkout submodules
+c933eb0 | Danila Danko | 2024-03-05 | fix: comment out rule 5
+b94786a | Danila Danko | 2024-03-04 | fix: enable stack in pipeline
+67345a6 | Abdelrahman Abounegm | 2024-03-04 | Re-enable the updated rule 5
+d595f2d | Abdelrahman Abounegm | 2024-03-04 | Add doctest for matchContext
+95b53fb | Danila Danko | 2024-03-04 | chore: update docs
+a39ea0d | Abdelrahman Abounegm | 2024-03-04 | Specify metavars for max depth and growth
+b008999 | Danila Danko | 2024-03-03 | feat: add try-unphi script
+23782d6 | Danila Danko | 2024-03-03 | fix: add metas
+e71fa69 | Abdelrahman Abounegm | 2024-03-03 | Fix formatting
+28d40c9 | Abdelrahman Abounegm | 2024-03-03 | Fix tests
+21a0056 | Abdelrahman Abounegm | 2024-03-03 | Document max-growth-factor CLI argument
+77e1493 | Abdelrahman Abounegm | 2024-03-03 | Redefine applyRules in terms of applyRulesWith
+aa74e84 | Abdelrahman Abounegm | 2024-03-03 | Accept an object with limits rather than just int
+de47893 | Abdelrahman Abounegm | 2024-03-03 | Apply substs from Phi and Ksi on current attribute
+b74a155 | Abdelrahman Abounegm | 2024-03-03 | Add a CLI argument for maximum application depth
+8964c6d | Nikolai Kudasov | 2024-03-01 | Temporarily disable Rules 1-5
+e045481 | Nikolai Kudasov | 2024-03-01 | Increase number of tests, reduce generated object size
+a7065e0 | Nikolai Kudasov | 2024-03-01 | Fix Rule 8, try fixing Rule 4
+58b6e3e | Nikolai Kudasov | 2024-03-01 | Add regression test with two global object dispatches
+5f43c40 | Nikolai Kudasov | 2024-03-01 | Fix generation of critical pairs
+33db141 | Nikolai Kudasov | 2024-03-01 | Do not shrink vertex data
+3683d81 | Nikolai Kudasov | 2024-03-01 | Apply fourmolu
+fe19438 | Nikolai Kudasov | 2024-03-01 | Add a couple of simple regression tests
+2d0e412 | Nikolai Kudasov | 2024-03-01 | Limit max term size by a factor of source term size
+b940f8e | Nikolai Kudasov | 2024-03-01 | Do not expand global object before VTX is assigned to it
+7f9c9b6 | Nikolai Kudasov | 2024-03-01 | Better generate bindings
+e1cabd2 | Nikolai Kudasov | 2024-03-01 | Temporarily ignore VTX value when comparing objects
+bd85cf1 | Danila Danko | 2024-03-01 | fix: disable normalizer
+6f8f23b | Danila Danko | 2024-03-01 | refactor: partition pipeline into functions
+2f452ef | Nikolai Kudasov | 2024-03-01 | Fix Rule 2 to be applicable inside dispatch and application
+288051e | Nikolai Kudasov | 2024-03-01 | Speed up confluence testing
+76e3503 | Nikolai Kudasov | 2024-03-01 | Rename test to spec
+67e2b2e | Danila Danko | 2024-03-01 | fix: pipeline script
+3ddfa83 | Danila Danko | 2024-03-01 | chore: update eo to 0.35.5
+465a131 | Danila Danko | 2024-03-01 | refactor: format, add type
+4266c6d | Danila Danko | 2024-02-29 | fix: demand recurse-submodules
+fbb182b | Danila Danko | 2024-02-28 | chore: update docs
+f3c2c36 | Danila Danko | 2024-02-28 | fix: CLI option descriptions
+0003b61 | Abdelrahman Abounegm | 2024-02-28 | Remove outdated function
+7599ad9 | Abdelrahman Abounegm | 2024-02-28 | Remove code duplication from getMaxNu
+3b87fd7 | Danila Danko | 2024-02-28 | chore: update CLI docs
+b69a7a1 | Danila Danko | 2024-02-28 | refactor: simplify reading the program in the `transform` command
+c159261 | Danila Danko | 2024-02-28 | refactor: dataless formation definition
+5ecd803 | Danila Danko | 2024-02-28 | fix: names
+91374ee | Abdelrahman Abounegm | 2024-02-28 | Remove redundant import
+f21ff43 | Abdelrahman Abounegm | 2024-02-28 | Fix the pre-defined rule 1 nu count
+c6e3ccc | Abdelrahman Abounegm | 2024-02-28 | Fix rule 1 outputs
+e0a57bc | Abdelrahman Abounegm | 2024-02-28 | Rename variable for clarification
+3aee8c4 | Abdelrahman Abounegm | 2024-02-28 | Revert inadvertently committed depth limit
+1d06413 | Danila Danko | 2024-02-28 | refactor: use MultiWayIf
+bc4cc56 | Danila Danko | 2024-02-28 | refactor: remove ImplicitParams
+d8b437e | Danila Danko | 2024-02-28 | fix: run hlint in the `check` job
+e08cf50 | Danila Danko | 2024-02-28 | refactor: checks code in a separate job before build
+5390e1d | Danila Danko | 2024-02-28 | feat: wrapped hlint that ignores bnfc-generated files
+8d4e784 | Danila Danko | 2024-02-28 | fix: hlint config
+53598fb | Danila Danko | 2024-02-28 | feat: default hlint config
+b11dba1 | Danila Danko | 2024-02-28 | feat: run hlint in CI
+149ea33 | Danila Danko | 2024-02-28 | fix: run CI for all PRs
+3baba43 | Danila Danko | 2024-02-28 | fix: test names
+c810c3e | Danila Danko | 2024-02-28 | fix: use getMaxNu in totalNuCount
+647ce71 | Danila Danko | 2024-02-27 | refactor: remove redundant instance
+5c89fb6 | Danila Danko | 2024-02-27 | refactor: select maximum
+b2ceb5d | Danila Danko | 2024-02-27 | feat: top-level `commands` section
+d035d6e | Danila Danko | 2024-02-27 | feat: links to commands pages
+97ea0a0 | Danila Danko | 2024-02-27 | feat: commands page
+156ac7b | Danila Danko | 2024-02-27 | Update eo-phi-normalizer/src/Language/EO/Phi/Rules/Common.hs
+4c3dd3f | Danila Danko | 2024-02-27 | refactor: remove toc
+bd3b55d | Danila Danko | 2024-02-27 | fix: include `normalizer` into summary
+03c4223 | Danila Danko | 2024-02-27 | feat: add mdbook to devshell
+5610078 | Danila Danko | 2024-02-27 | fix: run mdsh script on more files
+5a61fe0 | Danila Danko | 2024-02-27 | refactor: format
+566f0aa | Danila Danko | 2024-02-27 | fix: pretty-print json output
+407bdca | Danila Danko | 2024-02-27 | fix: update dependencies
+f26482a | Danila Danko | 2024-02-27 | feat: include phi-grammar
+42ef088 | Danila Danko | 2024-02-27 | fix: include new sections into summary
+f7fede4 | Danila Danko | 2024-02-27 | feat: introduction page
+0f3df58 | Danila Danko | 2024-02-27 | feat: normalizer page
+e82869b | Danila Danko | 2024-02-27 | refactor: normalizer-transform page
+d0bd6d6 | Danila Danko | 2024-02-27 | feat: normalizer-metrics page
+f0cab74 | Danila Danko | 2024-02-27 | feat: contributing page
+f63185f | Danila Danko | 2024-02-27 | feat: installation page
+ddf3c7b | Danila Danko | 2024-02-27 | refactor: move from readme to site
+fe803d2 | Danila Danko | 2024-02-27 | feat: support read from stdin
+fa266d9 | Danila Danko | 2024-02-27 | fix: write to file strictly
+75c7f33 | Danila Danko | 2024-02-27 | refactor: move `normalizer transform` docs
+cd264b9 | Danila Danko | 2024-02-27 | refactor: remove normalize-phi options page
+b125e0b | Danila Danko | 2024-02-27 | refactor: remove symlink to readme
+35e01e9 | Danila Danko | 2024-02-27 | refactor: move `user-defined rules` to `normalizer transform`
+4d537cf | Abdelrahman Abounegm | 2024-02-27 | Rename depth param to fix warning
+d32d84e | Abdelrahman Abounegm | 2024-02-27 | Ignore deltas when comparing objects
+f752cab | Abdelrahman Abounegm | 2024-02-27 | Add matching current attribute to the context
+49f0076 | Danila Danko | 2024-02-27 | refactor: make command for sample program mdsh-runnable
+ce9e11f | Abdelrahman Abounegm | 2024-02-27 | Use confluentCriticalPairN for checking objects
+1d03f39 | Abdelrahman Abounegm | 2024-02-26 | Rename "manual" to "regression" tests
+129f2bc | Danila Danko | 2024-02-27 | feat: add markdownlint config
+3b6086e | Danila Danko | 2024-02-27 | chore: update mds
+dd50987 | Danila Danko | 2024-02-27 | feat: script to run mdsh
+becae09 | Danila Danko | 2024-02-26 | fix: remove unused option
+dcfe91b | Danila Danko | 2024-02-26 | refactor: cli
+8dbf6ad | Danila Danko | 2024-02-26 | fix: switch to optparse-applicative
+98e00a6 | Danila Danko | 2024-02-25 | fix: executable name
+2e9077a | Danila Danko | 2024-02-25 | feat: use transform-phi and metrics-phi subcommands
+6a6fe3a | Danila Danko | 2024-02-25 | refactor: equalObject
+f8af145 | Danila Danko | 2024-02-25 | fix: improve test for added vertices
+b640b14 | Danila Danko | 2024-02-25 | feat: new test for added vertices are incremental
+09677d1 | Danila Danko | 2024-02-25 | fix: disable current_object
+388e71b | Danila Danko | 2024-02-25 | fix: eval meta functions
+c9c8d9b | Danila Danko | 2024-02-24 | refactor: use record field names
+a01178a | Danila Danko | 2024-02-24 | refactor: use string-interpolate
+d2072f1 | Danila Danko | 2024-02-24 | refactor: remove `matches` condition
+c6bc03b | Danila Danko | 2024-02-24 | fix: pattern and result in rule 1
+1da8096 | Danila Danko | 2024-02-24 | refactor: rule 1
+6a78e16 | Danila Danko | 2024-02-21 | fix: downgrade resolver
+7101457 | Abdelrahman Abounegm | 2024-02-24 | Add incrementality test for rule 1
+31f5545 | Abdelrahman Abounegm | 2024-02-24 | Revert rule 5 to its earlier form and add a test
+9aab577 | Abdelrahman Abounegm | 2024-02-24 | Fix tests to depend on equalObject instead of Eq
+184d56d | Abdelrahman Abounegm | 2024-02-24 | Match ξ and Φ objects in `matchObject`
+fdbdbbb | Abdelrahman Abounegm | 2024-02-24 | Write a custom Show instance for Subst
+d75c9b4 | Abdelrahman Abounegm | 2024-02-22 | Add basic support for manual confluence tests
+82cc5a3 | Abdelrahman Abounegm | 2024-02-21 | Move confluence checking to HSpec
+4080189 | Abdelrahman Abounegm | 2024-02-21 | Change NF condition to support any object
+a7ad6c5 | Abdelrahman Abounegm | 2024-02-21 | Ensure attributes in a formation are unique
+dc502e3 | Abdelrahman Abounegm | 2024-02-21 | Fix rule 1 using rule context
+8ec658e | Danila Danko | 2024-02-20 | feat: support json output
+2fa396e | Danila Danko | 2024-02-21 | feat: doctest for countDataless
+e6c1919 | Danila Danko | 2024-02-20 | fix: count formations (as per https://github.com/objectionary/eo/issues/2754#issuecomment-1871892256)
+a71b49b | Danila Danko | 2024-02-20 | fix: metrics test data
+8a9a75e | Danila Danko | 2024-02-20 | refactor: trivial cases
+8ed550f | Danila Danko | 2024-02-20 | fix: count dataless formations
+b8d3800 | Nikolai Kudasov | 2024-02-21 | Fix typo
+668f06b | Danila Danko | 2024-02-21 | refactor: merge "pipeline" and "build" jobs
+ca9784a | Danila Danko | 2024-02-21 | fix: downgrade resolver
+c7e90d0 | Abdelrahman Abounegm | 2024-02-20 | Add an extra rule for application on bottom
+b509326 | Danila Danko | 2024-02-20 | fix: typo in flag description
+2fd710e | Danila Danko | 2024-02-20 | fix: typo in flag description
+8c3d012 | Abdelrahman Abounegm | 2024-02-20 | Simplify usage of other arbitrary instances
+99a678b | Abdelrahman Abounegm | 2024-02-20 | Use equalObject instead of the default Eq instance
+c0af744 | Abdelrahman Abounegm | 2024-02-20 | Fix Arbitrarys to generate nonempty strings
+e9a958d | Abdelrahman Abounegm | 2024-02-20 | Remove redundant code
+3b4aa30 | Abdelrahman Abounegm | 2024-02-20 | Add generic shrink to several Arbitrary instances
+d1871d2 | Abdelrahman Abounegm | 2024-02-20 | Auto format confluence test file
+085eb16 | Abdelrahman Abounegm | 2024-02-20 | Filter out equal objects from the rule results
+3422d86 | Nikolai Kudasov | 2024-02-19 | Confluence via critical pairs
+47f664c | Abdelrahman Abounegm | 2024-02-19 | Define a wrapper to pretty print counter example
+228d50d | Abdelrahman Abounegm | 2024-02-19 | Move `nub` into applyRules
+3416876 | Abdelrahman Abounegm | 2024-02-19 | Fix the confluence property to use results length
+5db05fa | Abdelrahman Abounegm | 2024-02-19 | Use genericShrink
+dc4ef2d | Abdelrahman Abounegm | 2024-02-19 | Make sure Delta only has nonnegative integers
+41a09c0 | Abdelrahman Abounegm | 2024-02-19 | Remove unnessecary resizing from Arbitrary Binding
+cc8473b | Abdelrahman Abounegm | 2024-02-19 | Ensure the attribute label is not empty
+18ac60c | renovate[bot] | 2024-02-18 | chore(deps): update dependency pre-commit to v3.6.2
+2f10a50 | Abdelrahman Abounegm | 2024-02-16 | Attempt to limit the size of the arbitrary object
+a57a1d3 | Abdelrahman Abounegm | 2024-02-16 | Add initial draft for confluence tests
+1a1c220 | Danila Danko | 2024-02-16 | chore: update eolang
+54cef85 | Danila Danko | 2024-02-16 | chore: update eo to 0.35.3
+75dd68e | Danila Danko | 2024-02-16 | fix: update docs for the latest normalizer version
+0d3eaca | Danila Danko | 2024-02-16 | fix: disable the pipeline job
+4c66a4d | Danila Danko | 2024-02-16 | fix: print program
+46c6fdb | Danila Danko | 2024-02-16 | fix: list item endings
+b618206 | Danila Danko | 2024-02-16 | fix: todo
+794ca77 | Nikolai Kudasov | 2024-02-16 | Fix typo in README
+0762efa | Nikolai Kudasov | 2024-02-16 | Bump versions and update changelog
+57bd140 | Danila Danko | 2024-02-16 | feat: user-defined rules page
+6e4223f | Danila Danko | 2024-02-15 | fix: tests
+676da52 | Danila Danko | 2024-02-15 | fix: phi grammar
+857da5c | Danila Danko | 2024-02-15 | upd: syntax file
+31091ac | Danila Danko | 2024-02-15 | fix: phi grammar
+170fb46 | Danila Danko | 2024-02-14 | chore: update resolver
+4c83611 | Danila Danko | 2024-02-14 | fix: pipeline script location
+5ccddd3 | Danila Danko | 2024-02-14 | refactor: readme structure, commands
+03faacf | Danila Danko | 2024-02-14 | refactor: commands formatting
+1fa2d31 | Danila Danko | 2024-02-14 | fix: formatting
+c9e9775 | Danila Danko | 2024-02-14 | feat: add metrics tests
+143adc3 | Danila Danko | 2024-02-14 | feat: add metrics
+a9c991a | Danila Danko | 2024-02-13 | chore: update eo parser version
+309d24b | Danila Danko | 2024-02-13 | chore: update eo
+94eb0ba | Danila Danko | 2024-02-11 | fix: redirect
+ae33f33 | Abdelrahman Abounegm | 2024-02-11 | Document CLI output path option
+cef3a1c | Abdelrahman Abounegm | 2024-02-11 | Document CLI input path option
+4b2a216 | Abdelrahman Abounegm | 2024-02-11 | Format the user-defined rules file with Prettier
+3387e84 | Abdelrahman Abounegm | 2024-02-11 | Add rule 2 to user-defined rules
+24f74ef | Abdelrahman Abounegm | 2024-02-11 | Count vertex indices in applications and dispatch
+2bf06b7 | renovate[bot] | 2024-02-10 | chore(deps): update dependency pre-commit to v3.6.1
+c248d60 | Abdelrahman Abounegm | 2024-02-10 | Add a case for matching Termination
+90a6181 | Abdelrahman Abounegm | 2024-02-10 | Add rule 12 to Yegor's user-defined rules
+601a878 | Danila Danko | 2024-02-09 | fix: output with the `single` flag enabled
+8ec6513 | Danila Danko | 2024-02-09 | fix: remove silently
+64bdd1f | Danila Danko | 2024-02-09 | fix: set shell for pipeline
+9c17919 | Danila Danko | 2024-02-09 | fix: print a program, not an object
+ef7b8ba | Danila Danko | 2024-02-09 | refactor: formatting
+b25a978 | Danila Danko | 2024-02-09 | feat: add one more print
+20711f4 | Danila Danko | 2024-02-09 | fix: don't remove empty files
+9e82c03 | Danila Danko | 2024-02-09 | feat: clean pipeline directory before a run
+65b74e1 | Danila Danko | 2024-02-09 | feat: test without normalization
+9fe8c05 | Abdelrahman Abounegm | 2024-02-09 | Remove the redundant field of Subst
+bb970e5 | Abdelrahman Abounegm | 2024-02-09 | Fix the first rule by defining Φ in rule context
+5028df7 | Abdelrahman Abounegm | 2024-02-09 | Add a function for evaluating meta functions
+53ce696 | Danila Danko | 2024-02-09 | fix: print
+26d1d55 | Danila Danko | 2024-02-09 | fix: directory
+e1f63e3 | Danila Danko | 2024-02-09 | refactor: pipeline script
+b78ed11 | Danila Danko | 2024-02-09 | feat: add `single` option that prints a single normalized program
+3ad0df3 | Danila Danko | 2024-02-09 | feat: document the `single` option in readme
+f44b51a | Danila Danko | 2024-02-09 | feat: add `single` option that prints a single normalized program
+10cda89 | Abdelrahman Abounegm | 2024-02-08 | Add rule 1 as a user-defined rule
+c0e5ecc | Abdelrahman Abounegm | 2024-02-08 | Implement substitution for meta function
+a3acf39 | Abdelrahman Abounegm | 2024-02-08 | Move nu counting functions to Common
+56738b7 | Abdelrahman Abounegm | 2024-02-08 | Add syntax support for meta functions
+8d540f1 | Danila Danko | 2024-02-08 | refactor: install eo from local node config
+819a488 | Danila Danko | 2024-02-08 | feat: enable eo phi
+81e9204 | Danila Danko | 2024-02-08 | feat: add eolang as a dev dependency
+22c8c59 | Danila Danko | 2024-02-08 | feat: build site in CI
+cd6e775 | Danila Danko | 2024-02-08 | fix: flag in stack-action
+9cb8705 | Danila Danko | 2024-02-08 | feat: add mdbook site files
+5e01349 | Danila Danko | 2024-02-08 | fix: enable submodules
+99c5173 | Danila Danko | 2024-02-08 | fix: incomplete pattern matches warning
+26127b6 | Danila Danko | 2024-02-08 | fix: gitignore
+6319b78 | Danila Danko | 2024-02-08 | refactor: action
+e958b48 | Danila Danko | 2024-02-08 | refactor: pipeline script
+8558eb3 | Danila Danko | 2024-02-08 | fix: directory name in test config
+95dec7b | Abdelrahman Abounegm | 2024-02-07 | Fix missing argument in doctest
+c0050aa | Abdelrahman Abounegm | 2024-02-07 | Add descriptions to some rules
+067109d | Abdelrahman Abounegm | 2024-02-07 | Modify rule 5 to use context
+4d68a2f | Abdelrahman Abounegm | 2024-02-07 | Clean up (and fix) the context matching function
+0b78d54 | Abdelrahman Abounegm | 2024-02-07 | Change outerFormation to a non-empty list
+db7e156 | Danila Danko | 2024-02-07 | refactor: remove old pipeline files
+0dd5344 | Danila Danko | 2024-02-07 | feat: add script to transform the original eo tests
+346046d | Abdelrahman Abounegm | 2024-02-07 | Add rule 4 to user-defined rules
+94348a3 | Abdelrahman Abounegm | 2024-02-07 | Implement matching Phi from rule context
+68284cd | Abdelrahman Abounegm | 2024-02-07 | Add outerFormations to context
+7ccb80f | Danila Danko | 2024-02-06 | fix: clone submodules too
+ac800c5 | Danila Danko | 2024-02-06 | fix: set eo to 0.34.1
+df82168 | Danila Danko | 2024-02-06 | feat: add eo submodule
+497a831 | Nikolai Kudasov | 2024-02-06 | Upgrade to stack-action@v5
+4c7089a | Nikolai Kudasov | 2024-02-06 | Add test for terms generated from EO
+bb21771 | Nikolai Kudasov | 2024-02-06 | Fix grammar to support terms generated from EO
+c5a71b6 | Abdelrahman Abounegm | 2024-02-04 | Add support for `outPath` CLI parameter
+b20a85c | Abdelrahman Abounegm | 2024-02-04 | Remove redundant extension
+9cda60b | Nikolai Kudasov | 2024-02-02 | Remove -Werror, add synosis for the Haskell package
+1ddc731 | renovate[bot] | 2024-02-02 | chore(deps): update actions/checkout action to v4
+05d01ab | Nikolai Kudasov | 2024-02-02 | Add Hackage and Haddock badges in the READMEs
+2d738df | Nikolai Kudasov | 2024-02-02 | Add a release workflow (release a candidate on Hackage)
+f1c84d4 | Nikolai Kudasov | 2024-02-02 | Remove obsolete TODO (to please the PDD gods)
+c1fcb87 | Nikolai Kudasov | 2024-02-02 | Update changelog
+3439036 | Danila Danko | 2024-02-02 | fix: stack-action source
+8ee2c39 | Abdelrahman Abounegm | 2024-02-02 | Reorder branches to match the order in syntax file
+6df26b0 | Abdelrahman Abounegm | 2024-02-02 | Expand the wildcard to make all matches explicit
+db66b17 | Abdelrahman Abounegm | 2024-02-02 | Ensure the rule conversion leaves no metavariables
+d14f86c | Danila Danko | 2024-02-02 | fix: disable program 2 so that pipeline passes
+57ceffd | Nikolai Kudasov | 2024-02-02 | Fix TODO format for PDD bot in Language.EO.Phi.Rules.Yaml
+64e3729 | Nikolai Kudasov | 2024-02-02 | Fix TODO format for PDD bot
+b91df80 | Abdelrahman Abounegm | 2024-02-01 | Add Rule 10 with a test
+f6a074e | Abdelrahman Abounegm | 2024-02-01 | Implement attribute inequality
+1f33d20 | Abdelrahman Abounegm | 2024-02-01 | Fix the phi attribute
+20c85d4 | Abdelrahman Abounegm | 2024-02-01 | Fix Rule 8 expected result
+898db1a | Abdelrahman Abounegm | 2024-02-01 | Add unit tests for the newly added rules
+f1f3343 | Abdelrahman Abounegm | 2024-02-01 | Rename "(not)subset" to "present/absent"
+80cd786 | Abdelrahman Abounegm | 2024-02-01 | Add support for delta and lambda as special attrs
+f8d97ff | Danila Danko | 2024-02-01 | Update README.md
+bb3c875 | Danila Danko | 2024-02-01 | fix: disable fail-fast
+61d53a2 | Danila Danko | 2024-02-01 | fix: simplify workflow
+dc84e3f | Danila Danko | 2024-02-01 | try: fromjson
+a89bfc7 | Danila Danko | 2024-02-01 | refactor: readme
+5e10aea | Danila Danko | 2024-02-01 | try: fix action
+c372c13 | Danila Danko | 2024-02-01 | refactor: generate expressions to run scripts
+6ae49f6 | Danila Danko | 2024-02-01 | fix: run each program in a subdirectory
+d66c811 | Danila Danko | 2024-02-01 | feat: add old program that does something to graphs
+e8c344f | Abdelrahman Abounegm | 2024-01-31 | Add rules 3, 8, and 11
+353045c | Abdelrahman Abounegm | 2024-01-31 | Implement checking conditions before substituting
+f899409 | Abdelrahman Abounegm | 2024-01-31 | Add YAML Condition constructors for (not)subset
+4cb3101 | Abdelrahman Abounegm | 2024-01-31 | Add FromJSON instances to binding and attribute
+3857f80 | Abdelrahman Abounegm | 2024-01-31 | Remove redundant extensions
+bf49b27 | Abdelrahman Abounegm | 2024-01-31 | Remove outdated message
+166fc6f | Danila Danko | 2024-01-31 | fix: comments
+82377c2 | Danila Danko | 2024-01-31 | feat: add pipeline programs
+94da2f5 | Danila Danko | 2024-01-31 | fix: job name
+031e289 | Danila Danko | 2024-01-31 | fix: inputs
+77ce2bd | Danila Danko | 2024-01-31 | refactor: run pipeline in a separate job for each program
+a2da8ac | Danila Danko | 2024-01-31 | fix: gitignore
+c665de6 | Danila Danko | 2024-01-31 | feat: set PROGRAM for pipeline
+146f600 | Danila Danko | 2024-01-31 | refactor: pipeline script reads a specific program from a special directory
+ccefb8e | renovate[bot] | 2024-01-27 | chore(deps): update haskell-actions/run-fourmolu action to v10
+5c4a8a1 | Abdelrahman Abounegm | 2024-01-25 | Move reading source to case when yaml is provided
+5602f56 | Abdelrahman Abounegm | 2024-01-25 | Specify Haskell extension as formatter for Haskell
+f8c36a5 | Abdelrahman Abounegm | 2024-01-25 | Add missing key in test
+5309a64 | Nikolai Kudasov | 2024-01-25 | Apply formatting to Test.EO.Phi
+db87625 | Danila Danko | 2024-01-25 | feat: enable ImportQualifiedPost
+cab3d70 | Nikolai Kudasov | 2024-01-25 | Apply formatting
+fd37bd1 | Nikolai Kudasov | 2024-01-23 | Support --chain option, sketch more rules in yegor.yaml
+2f618bf | Danila Danko | 2024-01-18 | feat: add CLI
+2a7f2f1 | Nikolai Kudasov | 2024-01-18 | Fix matching
+cf6d2b9 | Danila Danko | 2024-01-16 | chore: update the cabal file
+1481ad7 | Danila Danko | 2024-01-16 | feat: run user-defined tests
+e6ab161 | Danila Danko | 2024-01-16 | fix: pre-defined rules tests
+97a8c7f | Danila Danko | 2024-01-16 | refactor: add unit tests for the rule 6
+54ac539 | Danila Danko | 2024-01-16 | refactor: support unit tests for custom rules
+f4c4b11 | Danila Danko | 2024-01-16 | refactor: pattern match Meta-things
+e003d2f | Danila Danko | 2024-01-16 | refactor: simplify code
+eccf0b9 | Danila Danko | 2024-01-16 | refactor: use only meta syntax
+d91e9ac | Danila Danko | 2024-01-16 | refactor: remove generated rules syntax files
+d0c354f | Danila Danko | 2024-01-16 | refactor: generate a single parser
+5ca1c7b | Danila Danko | 2024-01-16 | refactor: run bnfc
+4f98133 | Danila Danko | 2024-01-16 | refactor: remove old files
+e8156e5 | Danila Danko | 2024-01-16 | feat: use the meta syntax as the main syntax
+3f2e27d | Nikolai Kudasov | 2024-01-15 | WIP matchObject implementation
+694e52f | Nikolai Kudasov | 2024-01-11 | Update yegor.yaml rule set
+1de94a0 | Nikolai Kudasov | 2024-01-11 | WIP Parse and sketch conversion for user-defined rule sets
+b4ca57e | Nikolai Kudasov | 2024-01-11 | Sketch user-defined rule set YAML
+92b6c9b | Danila Danko | 2024-01-15 | feat: on file save, have a single newline at the end
+4addead | Danila Danko | 2024-01-14 | refactor: readme
+985b887 | Danila Danko | 2024-01-13 | refactor: add step names
+613b7f4 | Danila Danko | 2024-01-13 | feat: run formatOnSave to vscode settings
+c9ef577 | Danila Danko | 2024-01-13 | feat: use run-fourmolu action in CI
+a6245aa | Danila Danko | 2024-01-13 | refactor: remove pre-commit-checks (not used in CI)
+84f0d50 | Danila Danko | 2024-01-13 | fix: pre-commit configs section
+9ebe3bd | Danila Danko | 2024-01-13 | fix: pre-commit installation instructions
+f8d2d29 | Danila Danko | 2024-01-13 | feat: document pre-commit
+b485349 | Danila Danko | 2024-01-12 | feat: add steps to run pre-commit checks
+ef6063e | Danila Danko | 2024-01-12 | feat: add pre-commit checks
+47f3cfc | Danila Danko | 2024-01-12 | fix: pre-commit config
+855527e | Danila Danko | 2024-01-12 | refactor: format files
+fdacac3 | Danila Danko | 2024-01-12 | feat: add pre-commit to requirements.txt
+2a68d74 | Danila Danko | 2024-01-12 | feat: pre-commit config to run fourmolu
+2545ee6 | Danila Danko | 2024-01-12 | feat: list fourmolu fixities
+8f5db8d | Danila Danko | 2024-01-13 | fix: upgrade EO version
+1f82c13 | Danila Danko | 2024-01-13 | refactor: nix script
+2494f11 | Danila Danko | 2024-01-12 | fix: add -Werror flag to match CI
+8b0ab4e | Danila Danko | 2024-01-12 | fix: rm redundant input
+fcd7bb9 | Danila Danko | 2024-01-12 | refactor: code to run rules unit tests
+655019e | Danila Danko | 2024-01-12 | upd: cabal file
+06cd141 | Danila Danko | 2024-01-12 | upd: tests
+2cac3f2 | Danila Danko | 2024-01-12 | refactor: move rules from phi-paper
+c5bf9c5 | Danila Danko | 2024-01-12 | add: string-interpolate package
+c5d45f5 | Nikolai Kudasov | 2024-01-11 | Fix imports/exports for the build
+a56e7b0 | Nikolai Kudasov | 2024-01-11 | Fix PDD bot (TODO -> NOTE)
+c7be7e8 | Danila Danko | 2024-01-11 | fix: provide perl executable for the pipeline nix script
+c0f3054 | Danila Danko | 2024-01-11 | fix: typo
+ecb7a8e | Danila Danko | 2024-01-11 | feat: show EO code
+6e34404 | Danila Danko | 2024-01-11 | fix: ignore diff exit code
+3e45cf8 | Danila Danko | 2024-01-11 | fix: remove a trailing newline in normalize-phi output
+cb9d91b | Nikolai Kudasov | 2024-01-11 | Implement applyRules
+ece7fbd | Nikolai Kudasov | 2024-01-11 | Update Syntax.cf
+13f019b | Nikolai Kudasov | 2024-01-11 | Make test groups objects, not arrays
+fdc66c9 | Danila Danko | 2024-01-10 | feat: explain \nu
+17f46ee | Danila Danko | 2024-01-10 | Revert "Fix bytes token rule in grammar"
+c4f6a16 | Abdelrahman Abounegm | 2024-01-10 | Update syntax in phi unit tests
+a187a84 | Danila Danko | 2024-01-10 | fix: normalizer logs
+f1325b0 | Danila Danko | 2024-01-10 | fix: error message
+c565936 | Danila Danko | 2024-01-10 | add: script that runs pipeline
+8747b44 | Danila Danko | 2024-01-10 | fix: ref
+10bcc1c | Danila Danko | 2024-01-10 | upd: action
+8b4bbd4 | Danila Danko | 2024-01-10 | rm: test action
+0b68687 | Danila Danko | 2024-01-10 | feat: run normalizer
+7206f79 | Danila Danko | 2024-01-10 | refactor: pipeline script
+78adce2 | Yegor Bugayenko | 2023-12-28 | #3: typo
+ba2cad0 | Yegor Bugayenko | 2023-12-28 | #3: simple integration test
+0ddcdd9 | Danila Danko | 2024-01-10 | upd: parser and lexer
+572938b | Danila Danko | 2024-01-10 | fix: Bytes
+854ae6e | Abdelrahman Abounegm | 2024-01-09 | Update tests to use the new syntax
+bca0a65 | Abdelrahman Abounegm | 2024-01-09 | Update grammar to reflect syntax from paper
+b296cdd | Abdelrahman Abounegm | 2023-12-29 | Change the test Yaml format to an array of tests
+59d4e42 | Abdelrahman Abounegm | 2023-12-29 | Fix the hex representation of data bytes
+ac64050 | Abdelrahman Abounegm | 2023-12-29 | Update tests
+802360a | Abdelrahman Abounegm | 2023-12-29 | Treat program as a formation when normalizing
+70d57e4 | Abdelrahman Abounegm | 2023-12-29 | Stop normalizing objects that are values of Nu
+329d782 | Abdelrahman Abounegm | 2023-12-29 | Fix the implementation of the first rules using State monad to keep track of total Nu count
+7b4728f | renovate[bot] | 2023-12-28 | chore(deps): update actions/checkout action to v4
+e20b57a | Abdelrahman Abounegm | 2023-12-25 | Add a draft implementation for the first rule
+c3d3cb8 | Abdelrahman Abounegm | 2023-12-25 | Add an explicit export list
+9f4c9ac | Abdelrahman Abounegm | 2023-12-25 | Fix bytes token rule in grammar
+4db66f4 | Danila Danko | 2023-12-22 | fix: format files
+d032278 | Danila Danko | 2023-12-22 | add: fourmolu config
+564a7a4 | Danila Danko | 2023-12-22 | add: vscode settings
+d5f942b | Danila Danko | 2023-12-22 | fix: stack warning
+3aeaa75 | Danila Danko | 2023-12-22 | upd: flake lock
+4c4f058 | Danila Danko | 2023-12-22 | add: fourmolu config
+e31950f | Danila Danko | 2023-12-22 | add: cabal config
+9be2b18 | Danila Danko | 2023-12-22 | add: direnv config
+f16bdc8 | Danila Danko | 2023-12-22 | add: flake.nix
+0a8363a | renovate[bot] | 2023-12-22 | Add renovate.json
+3553917 | Nikolai Kudasov | 2023-12-22 | Add PeeledObject and conversion functions
+4d3a228 | Nikolai Kudasov | 2023-12-22 | Sketch Language.EO.Phi.Normalize module
+5657817 | Nikolai Kudasov | 2023-12-22 | Fix grammar
+817c366 | Nikolai Kudasov | 2023-12-22 | Remove location information from the AST (for now)
+345934b | Nikolai Kudasov | 2023-12-22 | Remove more ignored files from repo
+14270bf | Nikolai Kudasov | 2023-12-22 | Make a simpler, non-ambiguous grammar
+fd6c7cc | Nikolai Kudasov | 2023-12-22 | Remove and ignore backup and unnecessary(?) generated BNFC files
+a253508 | Nikolai Kudasov | 2023-12-22 | Update README
+5090c9d | Nikolai Kudasov | 2023-12-22 | Update LICENSE
+513782b | Nikolai Kudasov | 2023-12-22 | Update pretty-printing and package.yaml
+773e022 | Nikolai Kudasov | 2023-12-22 | Discover and run all tests in test/eo/phi/*.yaml
+9bdd23a | Nikolai Kudasov | 2023-12-22 | Convert tests to YAML files
+c9a8f4c | Nikolai Kudasov | 2023-12-22 | Add GHC built-test-haddock workflow
+a8df765 | Nikolai Kudasov | 2023-12-22 | Call normalizer in defaultMain
+376852b | Nikolai Kudasov | 2023-12-21 | Initialize normalizer project with BNFC
+3d82137 | Yegor Bugayenko | 2023-12-14 | start
