@@ -1,28 +1,28 @@
-e57c2ed | Danila Danko | 2024-05-03 | fix(normalizer): error about incomplete patterns
-868223a | github-actions[bot] | 2024-05-03 | Update Markdown files
-e31c280 | Nikolai Kudasov | 2024-05-03 | Apply suggestions from code review
+e57c2ed | Danila Danko | 2024-05-03 | fix(normalizer): fix error about incomplete patterns
+868223a | github-actions[bot] | 2024-05-03 | chore: Update Markdown files
+e31c280 | Nikolai Kudasov | 2024-05-03 | chore: Apply suggestions from code review
 0b56de2 | Danila Danko | 2024-05-02 | feat(site): add quick start
 6d67315 | Danila Danko | 2024-05-02 | fix(site): use celsius.phi in examples
-b8ddec6 | Danila Danko | 2024-05-02 | fix(site): wording
-53e5387 | Danila Danko | 2024-05-02 | fix(site): use more granular common .md-s
+b8ddec6 | Danila Danko | 2024-05-02 | fix(site): update wording
+53e5387 | Danila Danko | 2024-05-02 | fix(site): use more granular common .md files
 543a86f | Danila Danko | 2024-05-02 | fix(flake): remove sample-program
 2af0d78 | Danila Danko | 2024-04-29 | fix(ci): use macos-12
-c25c371 | github-actions[bot] | 2024-04-29 | Update Markdown files
+c25c371 | github-actions[bot] | 2024-04-29 | chore: Update Markdown files
 63b5eba | Danila Danko | 2024-04-29 | refactor(normalizer): add a named record field in LaTeX
 67a5da6 | Danila Danko | 2024-04-29 | refactor(normalizer): apply hlint suggestion
 878dba5 | Danila Danko | 2024-04-29 | refactor(normalizer): remove long import list
 21e47bb | Danila Danko | 2024-04-29 | refactor(normalizer): derive instances for LaTeX
-2a3ce3c | Danila Danko | 2024-04-29 | fix(normalizer): instance Show for LaTeX
+2a3ce3c | Danila Danko | 2024-04-29 | fix(normalizer): add Show instance for LaTeX
 cef5753 | Danila Danko | 2024-04-29 | refactor(normalizer): add toLatexString with a default implementation
 f80da8b | Danila Danko | 2024-04-29 | refactor(normalizer): use OverloadedStrings in more places
-ced39af | eyihluyc | 2024-04-28 | Add error messages, handle `⊥`, replace `\alpha_X ->` with `X->` (#255)
-3e9b2b8 | github-actions[bot] | 2024-04-26 | Update Markdown files
+ced39af | eyihluyc | 2024-04-28 | fix(normalizer): Add error messages, handle `⊥`, replace `\alpha_X ->` with `X->` (#255)
+3e9b2b8 | github-actions[bot] | 2024-04-26 | chore: Update Markdown files
 8620579 | Danila Danko | 2024-04-25 | fix(ci): pipeline and report configs
-491e332 | github-actions[bot] | 2024-04-25 | Update Markdown files
-a343384 | eyihluyc | 2024-04-25 | Add support for latex output in `transform` and `dataize --chain` (#255)
-11b599d | Abdelrahman Abounegm | 2024-04-24 | Remove redundant GHC option
-f92ce7c | Abdelrahman Abounegm | 2024-04-24 | Fix unit tests for substitution
-33045f8 | Abdelrahman Abounegm | 2024-04-24 | Add rule to match positional args in application
+491e332 | github-actions[bot] | 2024-04-25 | chore: Update Markdown files
+a343384 | eyihluyc | 2024-04-25 | feat(normalizer): Add support for latex output in `transform` and `dataize --chain` (#255)
+11b599d | Abdelrahman Abounegm | 2024-04-24 | chore: Remove redundant GHC option
+f92ce7c | Abdelrahman Abounegm | 2024-04-24 | fix: Fix unit tests for substitution
+33045f8 | Abdelrahman Abounegm | 2024-04-24 | feat: Add rule to match positional args in application
 7780e05 | Danila Danko | 2024-04-24 | chore(eo): update 0.36.0 -> 0.37.0
 45dbed6 | Danila Danko | 2024-04-22 | feat(flake): add mdbook-linkcheck to the default devshell
 dceb0ab | Danila Danko | 2024-04-22 | feat(flake): scripts for working with site docs
@@ -31,17 +31,17 @@ dceb0ab | Danila Danko | 2024-04-22 | feat(flake): scripts for working with site
 3c1fea7 | Danila Danko | 2024-04-20 | fix(ci): typo in a commit message
 55fd2c2 | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
 752697f | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
-85fe7c1 | Nikolai Kudasov | 2024-04-19 | Add more dataization tests
-1eff2fc | Nikolai Kudasov | 2024-04-19 | Fix rho-injection when empty rho is present
-756dcb7 | Nikolai Kudasov | 2024-04-19 | Revert removal of dataization for dispatch and application, leave comment
-3555e10 | Nikolai Kudasov | 2024-04-19 | Remove redundant imports
-136bf69 | Nikolai Kudasov | 2024-04-19 | Update the rule for dispatch
-f219c17 | Nikolai Kudasov | 2024-04-19 | Implement this-substitution with rho-injection
-db245b8 | Nikolai Kudasov | 2024-04-19 | Fix context handling for Package atom, do not dataize inside dispatch/application
-1be139e | Nikolai Kudasov | 2024-04-19 | Do not apply rewriting inside abstract objects
-4a8292b | Nikolai Kudasov | 2024-04-19 | Add this-substitution to the syntax
-28dd141 | Nikolai Kudasov | 2024-04-19 | Remove missing export list warning
-ccf7ae8 | Nikolai Kudasov | 2024-04-19 | Silent nix-on-path warning
+85fe7c1 | Nikolai Kudasov | 2024-04-19 | chore: Add more dataization tests
+1eff2fc | Nikolai Kudasov | 2024-04-19 | fix: Fix rho-injection when empty rho is present
+756dcb7 | Nikolai Kudasov | 2024-04-19 | revert: Revert removal of dataization for dispatch and application, leave comment
+3555e10 | Nikolai Kudasov | 2024-04-19 | refactor: Remove redundant imports
+136bf69 | Nikolai Kudasov | 2024-04-19 | feat: Update the rule for dispatch
+f219c17 | Nikolai Kudasov | 2024-04-19 | feat: Implement this-substitution with rho-injection
+db245b8 | Nikolai Kudasov | 2024-04-19 | fix: Fix context handling for Package atom, do not dataize inside dispatch/application
+1be139e | Nikolai Kudasov | 2024-04-19 | refactor: Do not apply rewriting inside abstract objects
+4a8292b | Nikolai Kudasov | 2024-04-19 | feat: Add this-substitution to the syntax
+28dd141 | Nikolai Kudasov | 2024-04-19 | chore: Remove missing export list warning
+ccf7ae8 | Nikolai Kudasov | 2024-04-19 | chore: Silent nix-on-path warning
 6b98ee6 | Danila Danko | 2024-04-18 | fix(ci): always build with optimizations to make tests run faster
 004958b | Danila Danko | 2024-04-18 | fix(ci): first run pipeline, then update files
 854cc7b | Danila Danko | 2024-04-18 | fix(ci): set github_token
@@ -124,16 +124,16 @@ f723e6d | Danila Danko | 2024-04-15 | chore(pipeline): bump eo version
 f809bcb | Danila Danko | 2024-04-10 | fix(stack): update resolver
 6322db6 | Danila Danko | 2024-04-10 | fix(cabal.project): list all projects
 27b7a05 | Danila Danko | 2024-04-10 | refactor(flake): - remove unnecessary packages - switch to haskell-flake
-27d0c68 | Nikolai Kudasov | 2024-04-12 | Bump version and update changelog
-79d220e | Nikolai Kudasov | 2024-04-12 | Rollback debug changes
-a5f71f3 | Nikolai Kudasov | 2024-04-12 | Manually fix bytes.phi to have an empty Delta binding
-b4d2422 | Nikolai Kudasov | 2024-04-12 | Fix dataization for Package when expanding via Rule 4
-7019437 | Nikolai Kudasov | 2024-04-12 | Mark generated org.eolang.* phi files as generated
-48128eb | Nikolai Kudasov | 2024-04-12 | Add org.eolang.* dependency files, as generated by EO compiler
-97f4193 | Nikolai Kudasov | 2024-04-12 | Automatically make dependencies into Packages
-55034b5 | Nikolai Kudasov | 2024-04-12 | Update documentation
-df6f284 | Nikolai Kudasov | 2024-04-12 | Remove debug traces
-366543c | Nikolai Kudasov | 2024-04-12 | Add --dependency-file option to support dependency files
+27d0c68 | Nikolai Kudasov | 2024-04-12 | chore: Bump version and update changelog
+79d220e | Nikolai Kudasov | 2024-04-12 | fix: Rollback debug changes
+a5f71f3 | Nikolai Kudasov | 2024-04-12 | fix: Manually fix bytes.phi to have an empty Delta binding
+b4d2422 | Nikolai Kudasov | 2024-04-12 | fix: Fix dataization for Package when expanding via Rule 4
+7019437 | Nikolai Kudasov | 2024-04-12 | chore: Mark generated org.eolang.* phi files as generated
+48128eb | Nikolai Kudasov | 2024-04-12 | chore: Add org.eolang.* dependency files, as generated by EO compiler
+97f4193 | Nikolai Kudasov | 2024-04-12 | chore: Automatically make dependencies into Packages
+55034b5 | Nikolai Kudasov | 2024-04-12 | chore: Update documentation
+df6f284 | Nikolai Kudasov | 2024-04-12 | chore: Remove debug traces
+366543c | Nikolai Kudasov | 2024-04-12 | feat: Add --dependency-file option to support dependency files
 4d7accf | Danila Danko | 2024-04-10 | fix(site): metrics definition and example
 7b6ec40 | Danila Danko | 2024-04-10 | fix(scripts): directories in update-markdown
 c1a2522 | Danila Danko | 2024-04-10 | feat(site): add quick start
