@@ -1,5 +1,4 @@
 e57c2ed | Danila Danko | 2024-05-03 | fix(normalizer): fix error about incomplete patterns
-868223a | github-actions[bot] | 2024-05-03 | chore: Update Markdown files
 e31c280 | Nikolai Kudasov | 2024-05-03 | chore: Apply suggestions from code review
 0b56de2 | Danila Danko | 2024-05-02 | feat(site): add quick start
 6d67315 | Danila Danko | 2024-05-02 | fix(site): use celsius.phi in examples
@@ -7,7 +6,6 @@ b8ddec6 | Danila Danko | 2024-05-02 | fix(site): update wording
 53e5387 | Danila Danko | 2024-05-02 | fix(site): use more granular common .md files
 543a86f | Danila Danko | 2024-05-02 | fix(flake): remove sample-program
 2af0d78 | Danila Danko | 2024-04-29 | fix(ci): use macos-12
-c25c371 | github-actions[bot] | 2024-04-29 | chore: Update Markdown files
 63b5eba | Danila Danko | 2024-04-29 | refactor(normalizer): add a named record field in LaTeX
 67a5da6 | Danila Danko | 2024-04-29 | refactor(normalizer): apply hlint suggestion
 878dba5 | Danila Danko | 2024-04-29 | refactor(normalizer): remove long import list
@@ -16,9 +14,7 @@ c25c371 | github-actions[bot] | 2024-04-29 | chore: Update Markdown files
 cef5753 | Danila Danko | 2024-04-29 | refactor(normalizer): add toLatexString with a default implementation
 f80da8b | Danila Danko | 2024-04-29 | refactor(normalizer): use OverloadedStrings in more places
 ced39af | eyihluyc | 2024-04-28 | fix(normalizer): Add error messages, handle `⊥`, replace `\alpha_X ->` with `X->` (#255)
-3e9b2b8 | github-actions[bot] | 2024-04-26 | chore: Update Markdown files
 8620579 | Danila Danko | 2024-04-25 | fix(ci): pipeline and report configs
-491e332 | github-actions[bot] | 2024-04-25 | chore: Update Markdown files
 a343384 | eyihluyc | 2024-04-25 | feat(normalizer): Add support for latex output in `transform` and `dataize --chain` (#255)
 11b599d | Abdelrahman Abounegm | 2024-04-24 | chore: Remove redundant GHC option
 f92ce7c | Abdelrahman Abounegm | 2024-04-24 | fix: Fix unit tests for substitution
@@ -29,8 +25,6 @@ dceb0ab | Danila Danko | 2024-04-22 | feat(flake): scripts for working with site
 0659383 | Danila Danko | 2024-04-22 | fix(ci): mdbook output directory
 4106357 | Danila Danko | 2024-04-20 | fix(ci): use official mdsh repo
 3c1fea7 | Danila Danko | 2024-04-20 | fix(ci): typo in a commit message
-55fd2c2 | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
-752697f | github-actions[bot] | 2024-04-19 | Update Markdowfilesn files
 85fe7c1 | Nikolai Kudasov | 2024-04-19 | chore: Add more dataization tests
 1eff2fc | Nikolai Kudasov | 2024-04-19 | fix: Fix rho-injection when empty rho is present
 756dcb7 | Nikolai Kudasov | 2024-04-19 | revert: Revert removal of dataization for dispatch and application, leave comment
@@ -77,11 +71,9 @@ e4281a4 | Danila Danko | 2024-04-18 | fix(flake): ignore more generated files
 45beb17 | Danila Danko | 2024-04-17 | refactor(scripts > pipeline): split functions, format, run shellcheck
 444b285 | Danila Danko | 2024-04-17 | fix(scripts > pipeline): calculate eo parser version from the eo-runtime version
 4b054e7 | Danila Danko | 2024-04-17 | fix(pipeline): add --recursive
-25fd955 | github-actions[bot] | 2024-04-16 | Update normalizer data files
 b00b472 | Danila Danko | 2024-04-16 | feat(ci): update, commit and push atoms
 831a24d | Danila Danko | 2024-04-16 | fix(ci): don't try to commit and push when no markdown files to commit
 058caa0 | Danila Danko | 2024-04-16 | refactor(normalizer): move phi programs to the data directory
-cc8f5af | github-actions[bot] | 2024-04-16 | Update Markdown files
 450897e | Danila Danko | 2024-04-16 | fix(normalizer): use a named chunk with setup code
 680ac1c | Danila Danko | 2024-04-16 | fix(normalizer): format with fourmolu
 ce36826 | Danila Danko | 2024-04-16 | fix(ci): use mdbook with plugins
@@ -147,7 +139,6 @@ dc1ddc6 | Danila Danko | 2024-04-10 | fix(site): invalid link
 fe0991c | Danila Danko | 2024-04-10 | fix(site): titles
 d1aaef0 | Danila Danko | 2024-04-10 | refactor(site): move files
 2acf856 | Danila Danko | 2024-04-10 | feat(site): add a section on updating installed normalizer
-d61c588 | github-actions[bot] | 2024-04-10 | Update Markdown files
 7e0c45d | Danila Danko | 2024-04-10 | fix(ci): commit in the pipeline job
 75317f0 | Danila Danko | 2024-04-08 | feat(ci): create PR with updated Markdown
 d97e23e | Danila Danko | 2024-04-08 | refactor(all): rename script that updates markdown files
@@ -238,7 +229,6 @@ af5284e | Danila Danko | 2024-03-24 | feat(ci): use pipeline artifact to deploy 
 c18c2cd | Danila Danko | 2024-03-24 | fix(ci): use faster stack-action
 4291cf2 | Danila Danko | 2024-03-24 | fix(ci): run haddock as a part of stack setup
 35edf41 | Danila Danko | 2024-03-24 | feat(ci): upload pipeline artifact
-1182c69 | renovate[bot] | 2024-03-24 | chore(deps): update dependency pre-commit to v3.7.0
 f387a6f | Danila Danko | 2024-03-23 | feat(ci, report): generate a job summary
 fb1bb40 | Danila Danko | 2024-03-24 | feat(site): add docs for the report command
 d797f3a | Danila Danko | 2024-03-24 | fix(report): remove config input
@@ -570,7 +560,6 @@ d1871d2 | Abdelrahman Abounegm | 2024-02-20 | Auto format confluence test file
 dc4ef2d | Abdelrahman Abounegm | 2024-02-19 | Make sure Delta only has nonnegative integers
 41a09c0 | Abdelrahman Abounegm | 2024-02-19 | Remove unnessecary resizing from Arbitrary Binding
 cc8473b | Abdelrahman Abounegm | 2024-02-19 | Ensure the attribute label is not empty
-18ac60c | renovate[bot] | 2024-02-18 | chore(deps): update dependency pre-commit to v3.6.2
 2f10a50 | Abdelrahman Abounegm | 2024-02-16 | Attempt to limit the size of the arbitrary object
 a57a1d3 | Abdelrahman Abounegm | 2024-02-16 | Add initial draft for confluence tests
 1a1c220 | Danila Danko | 2024-02-16 | chore: update eolang
@@ -602,7 +591,6 @@ cef3a1c | Abdelrahman Abounegm | 2024-02-11 | Document CLI input path option
 4b2a216 | Abdelrahman Abounegm | 2024-02-11 | Format the user-defined rules file with Prettier
 3387e84 | Abdelrahman Abounegm | 2024-02-11 | Add rule 2 to user-defined rules
 24f74ef | Abdelrahman Abounegm | 2024-02-11 | Count vertex indices in applications and dispatch
-2bf06b7 | renovate[bot] | 2024-02-10 | chore(deps): update dependency pre-commit to v3.6.1
 c248d60 | Abdelrahman Abounegm | 2024-02-10 | Add a case for matching Termination
 90a6181 | Abdelrahman Abounegm | 2024-02-10 | Add rule 12 to Yegor's user-defined rules
 601a878 | Danila Danko | 2024-02-09 | fix: output with the `single` flag enabled
@@ -658,7 +646,6 @@ bb21771 | Nikolai Kudasov | 2024-02-06 | Fix grammar to support terms generated 
 c5a71b6 | Abdelrahman Abounegm | 2024-02-04 | Add support for `outPath` CLI parameter
 b20a85c | Abdelrahman Abounegm | 2024-02-04 | Remove redundant extension
 9cda60b | Nikolai Kudasov | 2024-02-02 | Remove -Werror, add synosis for the Haskell package
-1ddc731 | renovate[bot] | 2024-02-02 | chore(deps): update actions/checkout action to v4
 05d01ab | Nikolai Kudasov | 2024-02-02 | Add Hackage and Haddock badges in the READMEs
 2d738df | Nikolai Kudasov | 2024-02-02 | Add a release workflow (release a candidate on Hackage)
 f1c84d4 | Nikolai Kudasov | 2024-02-02 | Remove obsolete TODO (to please the PDD gods)
@@ -700,7 +687,6 @@ bf49b27 | Abdelrahman Abounegm | 2024-01-31 | Remove outdated message
 a2da8ac | Danila Danko | 2024-01-31 | fix: gitignore
 c665de6 | Danila Danko | 2024-01-31 | feat: set PROGRAM for pipeline
 146f600 | Danila Danko | 2024-01-31 | refactor: pipeline script reads a specific program from a special directory
-ccefb8e | renovate[bot] | 2024-01-27 | chore(deps): update haskell-actions/run-fourmolu action to v10
 5c4a8a1 | Abdelrahman Abounegm | 2024-01-25 | Move reading source to case when yaml is provided
 5602f56 | Abdelrahman Abounegm | 2024-01-25 | Specify Haskell extension as formatter for Haskell
 f8c36a5 | Abdelrahman Abounegm | 2024-01-25 | Add missing key in test
@@ -785,7 +771,6 @@ ac64050 | Abdelrahman Abounegm | 2023-12-29 | Update tests
 802360a | Abdelrahman Abounegm | 2023-12-29 | Treat program as a formation when normalizing
 70d57e4 | Abdelrahman Abounegm | 2023-12-29 | Stop normalizing objects that are values of Nu
 329d782 | Abdelrahman Abounegm | 2023-12-29 | Fix the implementation of the first rules using State monad to keep track of total Nu count
-7b4728f | renovate[bot] | 2023-12-28 | chore(deps): update actions/checkout action to v4
 e20b57a | Abdelrahman Abounegm | 2023-12-25 | Add a draft implementation for the first rule
 c3d3cb8 | Abdelrahman Abounegm | 2023-12-25 | Add an explicit export list
 9f4c9ac | Abdelrahman Abounegm | 2023-12-25 | Fix bytes token rule in grammar
@@ -798,7 +783,6 @@ d5f942b | Danila Danko | 2023-12-22 | fix: stack warning
 e31950f | Danila Danko | 2023-12-22 | add: cabal config
 9be2b18 | Danila Danko | 2023-12-22 | add: direnv config
 f16bdc8 | Danila Danko | 2023-12-22 | add: flake.nix
-0a8363a | renovate[bot] | 2023-12-22 | Add renovate.json
 3553917 | Nikolai Kudasov | 2023-12-22 | Add PeeledObject and conversion functions
 4d3a228 | Nikolai Kudasov | 2023-12-22 | Sketch Language.EO.Phi.Normalize module
 5657817 | Nikolai Kudasov | 2023-12-22 | Fix grammar
