@@ -87,3 +87,8 @@ The diagrams are described in the [Structurizr DSL](https://docs.structurizr.com
     ```
 
 1. Learn more - [link](https://github.com/structurizr/)
+
+## Stand-up bot
+
+[repo link](https://github.com/deemp/scrum-standup-telegram-bot)
+
