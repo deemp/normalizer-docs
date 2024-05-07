@@ -88,6 +88,22 @@ The diagrams are described in the [Structurizr DSL](https://docs.structurizr.com
 
 1. Learn more - [link](https://github.com/structurizr/)
 
+### Alternatives
+
+#### LikeC4
+
+[link](https://likec4.dev/)
+
+Features:
+
+- arbitrarily deep nesting of layers
+
+Currently missing functionality:
+
+- custom colors
+- custom shapes
+- dynamic views
+
 ## Stand-up bot
 
 [repo link](https://github.com/deemp/scrum-standup-telegram-bot)
