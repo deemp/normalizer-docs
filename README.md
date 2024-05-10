@@ -88,7 +88,7 @@ See [Utility Tree](https://github.com/objectionary/normalizer/issues/321).
 
 ### Structurizr
 
-The diagrams are described in the [Structurizr DSL](https://docs.structurizr.com/dsl).
+The diagrams are described in the [Structurizr DSL](https://docs.structurizr.com/dsl) in [this file](./architecture/workspace.dsl).
 
 1. Install VS Code extension - `systemticks.c4-dsl-extension`
 
@@ -166,4 +166,3 @@ Additionally, on `master`:
 - [Quality Plan](https://docs.google.com/document/d/1Rt7J87Mq_zzY-1vyLrTlqFe23zezw4I41yJE73ObgGk/edit?usp=sharing)
 - [ASS final presentation](https://docs.google.com/presentation/d/1yDkyhUldUwvb1oSDPrJzZHJGthF7Suc3T3OEuq3qOfY/edit?usp=sharing)
 - [Risk management](https://docs.google.com/presentation/d/1T3vpHEK6slE48Gds3317EYC_Dxflhj-JY-KTjNE6hwg/edit?usp=sharing)
-
