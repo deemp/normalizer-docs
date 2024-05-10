@@ -90,6 +90,8 @@ See [Utility Tree](https://github.com/objectionary/normalizer/issues/321).
 
 The diagrams are described in the [Structurizr DSL](https://docs.structurizr.com/dsl) in [this file](./architecture/workspace.dsl).
 
+The rendered version is available at this [link](https://structurizr.com/workspace/91641/dsl).
+
 1. Install VS Code extension - `systemticks.c4-dsl-extension`
 
 1. Pull image:
