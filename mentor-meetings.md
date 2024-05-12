@@ -4,19 +4,42 @@
 
 ### Slides
 
-- Use "Problem - Solution" format for the introduction
-- Optimization
-  - Show metrics visually
-    - Input program box => Normalizer => Metrics green
-  - Not a program
-- Add preview of stakeholders
-- Modifiability via custom rules
-  - Extra work to spend less time in future
-- Graph
-  - remove bots
-  - normalize
-- Architecture
-  - Improve visibility
+[presentation link](https://docs.google.com/presentation/d/1pSzJP3sOJ7WUGeHVADvyVoIqwT6ThGbFTbbzDYel8PM/edit?usp=sharing)
+
+- `Context`, `Context. Optimization`: Use "Problem - Solution" format for the introduction
+- `Context. Optimization`
+  - [ ] Show metrics visually
+    - [ ] Input program box => Normalizer => Metrics green
+  - [ ] Remove the program
+- `Context. Stakeholders`
+  - [ ] Add list of stakeholders
+  - [ ] Possibly change the order
+  - [ ] Reduce amount of text
+  - [ ] Normalizer team:
+    - [ ] Provide just goals
+    - [ ] Move team members to a separate slide
+- `Project planning. Stages`
+  - [ ] Remove bots
+  - [ ] Restore Nickolay's reasoning about time.
+    - [x] Why do we guarantee time?
+      - Because we need to write an interpreter, and we have experience writing them on the ACCPA course
+    - [ ] Why don't we put additional tasks into issues and don't track their time?
+  - [ ] Tell about increased scope due to `ineo:fuse`
+  - [ ] Tell about time - initial scope required much less time than allotted
+- `Project tracking`
+  - `Project activity`
+    - [ ] Normalize bars
+    - [ ] How do we deal with personal blockers?
+- `Requirements Engineering`
+  - [ ] Explain gathering requirements in more details
+    - [ ] We need to prepare questions for the customer to get more concrete answers
+  - [ ] Expected new requirements from the very beginning
+- `Architecture`
+  - [ ] Modifiability via custom rules
+    - [ ] "Extra work to spend less time in future"
+  - [ ] Improve visibility
+    - [ ] Move boxes manually
+    - [ ] Explain
 
 ### Manager tasks
 
