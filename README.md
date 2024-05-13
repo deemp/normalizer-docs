@@ -82,6 +82,10 @@ Some issues are related to non-functional requirements ([[peformance]](https://g
 
 ## Architecture
 
+### Notes
+
+See [Notes](general-notes.md)
+
 ### Utility tree
 
 See [Utility Tree](https://github.com/objectionary/normalizer/issues/321).
