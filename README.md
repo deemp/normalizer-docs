@@ -167,6 +167,17 @@ Additionally, on `master`:
 - build report and add it to the site
 - publish the site
 
+## Processes
+
+### Proof team reports
+
+- Danila sends a message to the team Telegram chat every Friday at 12:00. The message asks the proof team about their progress and provides a link to an issue for a report.
+  - Messages and issues are scheduled for every week till early August. Issues are available in the `objectionary/proof` repository ([link](https://github.com/objectionary/proof/issues?q=is%3Aissue+is%3Aclosed+%5Breport%5D)).
+- Nickolay, Anatoliy, Violetta reply.
+- Anatoliy writes a report in the linked issue.
+- At 18:00, Danila checks the issue and asks Anatoliy to add missing details.
+
+
 ## Documents
 
 - [Quality Plan](https://docs.google.com/document/d/1Rt7J87Mq_zzY-1vyLrTlqFe23zezw4I41yJE73ObgGk/edit?usp=sharing)
