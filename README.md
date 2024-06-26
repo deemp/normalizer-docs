@@ -49,25 +49,42 @@ timeline
             : Update EO team proposals
             : Work on a patent
             : Release eo-phi-normalizer 0.4.0
-        mid-May - June
+        mid-May - end of May
             : Implement EO team proposals
             : Extend dataization support
             : Optimize normalizer to work well on a Spring application
             : Work on a confluence proof for Extended PHI
             : Study SOAS
             : Work on a patent
-            : Release eo-phi-normalizer 0.5.0    
+        start of June
+            : Release eo-phi-normalizer 0.4.0
+            : Produce and submit Deliverables for Stage 1
+            : Get feedback from the Customer representative
+```
 
-    section Stage 2 (July-September)
-        July-September
+```mermaid
+timeline
+    title Timeline of the Normalizer project
+    section Stage 2
+        start of June - end of June
+            : Work on custom rules proposals
+            : Run tests without complete normalization
+            : Update the rules of Extended PHI
+            : Release eo-phi-normalizer 0.4.2
+        end of June - end of July
+            : Implement a faster normalizer engine using Free Foil
+            : Implement custom rules for the Spring application
             : Finish confluence proof for Extended PHI
-            : Work on a proof via SOAS
-            : Work on an academic paper on the normalizer
-            : Optimize the normalizer
-    section Stage 3 (October-December)
-        October-December
+            : Release eo-phi-normalizer 0.5.0
+        end of July - end of August
+            : Extend test suite and adapt normalizer
+            : Submit an academic paper on the new normalizer engine
+            : Develop the idea of a confluence proof generator
+            : Release eo-phi-normalizer 0.5.1
+    section Stage 3
+        start of September - start of December
             : Write a confluence proof generator
-            : Submit an academic paper on the normalizer
+            : Submit a patent
 ```
 
 ## GitHub Issues
