@@ -8,6 +8,8 @@ It's assumed that the rewriting system used for normalization is confluent.
 
 This [repository](https://github.com/objectionary/proof) contains a confluence proof in Lean 4.
 
+Here ([link](https://www.overleaf.com/4611428655spqyynvnqgrt#978f7a)) are the questions about PHI and sample programs.
+
 ## Timeline
 
 ```mermaid
