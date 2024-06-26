@@ -151,7 +151,14 @@ Currently missing functionality:
 
 ## Analytics
 
-- [git log](./data/commits.csv)
+Command:
+
+```sh
+git fetch normalizer master:master
+git log normalizer/master --no-merges --date=short --pretty=format:'%h | %an | %ad | %s' > data/commits.csv
+```
+
+- [commits](./data/commits.csv)
 - [script](analytics_tools/commits.py)
 
 ## CI
