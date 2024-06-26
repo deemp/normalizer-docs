@@ -149,14 +149,6 @@ Currently missing functionality:
 - custom shapes
 - dynamic views
 
-## Daily Scrum bot
-
-[repo link](https://github.com/deemp/daily-scrum-telegram-bot)
-
-### Why use a bot
-
-- [link](https://www.scrum.org/forum/scrum-forum/38729/do-botsapps-help-daily-stand-ups) - see the message from `Rudresh SM`
-
 ## Analytics
 
 - [git log](./data/commits.csv)
