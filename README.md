@@ -68,22 +68,21 @@ timeline
     section Stage 2
         start of June - end of June
             : Work on custom rules proposals
-            : Run tests without complete normalization
-            : Update the rules of Extended PHI
-            : Release eo-phi-normalizer 0.4.2
+            : Release eo-phi-normalizer 0.4.1
         end of June - end of July
-            : Implement a faster normalizer engine using Free Foil
+            : Update the rules of Extended PHI
             : Implement custom rules for the Spring application
-            : Finish confluence proof for Extended PHI
-            : Release eo-phi-normalizer 0.5.0
+            : Release eo-phi-normalizer 1.0.0
         end of July - end of August
-            : Extend test suite and adapt normalizer
-            : Submit an academic paper on the new normalizer engine
-            : Develop the idea of a confluence proof generator
-            : Release eo-phi-normalizer 0.5.1
+            : Run pipeline tests without complete normalization
+            : Finish confluence proof for Extended PHI
+            : Update an academic paper for CPP 2025
+            : Release eo-phi-normalizer 1.1.0
     section Stage 3
         start of September - start of December
-            : Write a confluence proof generator
+            : Submit the CPP paper
+            : Implement a faster normalizer engine using Free Foil
+            : Submit an academic paper on the new normalizer engine
             : Submit a patent
 ```
 
