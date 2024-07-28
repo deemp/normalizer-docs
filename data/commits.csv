@@ -1,7 +1,328 @@
+e8e168d | RoukayaZaki | 2024-05-20 | Remove special case for delta binding since VTX is removed
+6f3621c | Yegor Bugayenko | 2024-07-26 | license
+1099061 | eyihluyc | 2024-07-25 | Update `R_COPY1` and `R_COPY2`
+05fd609 | eyihluyc | 2024-07-25 | Uncomment another test about application
+b1102ae | eyihluyc | 2024-07-25 | Fix the text
+d33f814 | Nikolai Kudasov | 2024-07-25 | Fix R_COPY, add R_COPY_EMPTY
+46d85b1 | eyihluyc | 2024-07-24 | Add the test to `dataization.yaml`
+cfaa630 | eyihluyc | 2024-07-24 | Rename `!n` to `!b`
+cd55a7b | eyihluyc | 2024-07-23 | Update variable name in conditions
+f9e2f43 | eyihluyc | 2024-07-23 | Update copy rule as in phi-paper
+5bc9d28 | github-actions[bot] | 2024-07-24 | Update normalizer data files
+ddfc08e | github-actions[bot] | 2024-07-24 | Update pipeline/pipeline.lock
+13833bd | Danila Danko | 2024-07-24 | fix(scripts): function name
+4661c27 | Danila Danko | 2024-07-24 | fix(pipeline): update lock to trigger generation of `dependencies.md` files
+f7409d6 | Danila Danko | 2024-07-24 | refactor(scripts): remove old comment
+7496efa | Danila Danko | 2024-07-24 | feat(scripts): update dependencies.md files together with .phi files
+f1b9757 | Danila Danko | 2024-07-24 | refactor(ci): use a variable
+903075c | Danila Danko | 2024-07-24 | refactor(scripts): use variables more
+097fd40 | Danila Danko | 2024-07-24 | feat(scripts): add functions for writing all dependencies into markdown files
+d29ea8d | Danila Danko | 2024-07-19 | chore(normalizer): bump version 0.4.1 -> 1.0.0
+d3818e1 | Danila Danko | 2024-07-19 | feat(normalizer): update changelog for v1.0.0
+cc287a7 | Danila Danko | 2024-07-19 | refactor(normalizer): make fourmolu happy
+a2ce78e | Nikolai Kudasov | 2024-07-19 | Update identifier names in yegor.yaml
+583944d | Nikolai Kudasov | 2024-07-19 | Distinguish meta identifiers lexically
+c4071f7 | Nikolai Kudasov | 2024-07-19 | Allow forall to explicitly mention metavariables in pattern
+9e79118 | Nikolai Kudasov | 2024-07-19 | Ensure fresh attributes
+8a350c0 | Nikolai Kudasov | 2024-07-19 | Use tail syntax
+5cc4044 | github-actions[bot] | 2024-07-18 | Update normalizer data files
+f5b9326 | eyihluyc | 2024-07-18 | Remove duplicate rule
+32be6c9 | Danila Danko | 2024-07-17 | refactor(normalizer): factor out the condition into a function
+75fb769 | Danila Danko | 2024-07-17 | fix(normalizer): don't warn on unknown atoms
+9653b2e | Danila Danko | 2024-07-17 | refactor(normalizer): use pointfree calls
+47a58c7 | github-actions[bot] | 2024-07-13 | Update normalizer data files
+3607da0 | renovate[bot] | 2024-07-13 | chore(deps): update dependency prettier to v3.3.3
+89cac90 | Danila Danko | 2024-07-12 | fix(site): header level
+064fbb0 | Danila Danko | 2024-07-12 | feat(site): add docs for the `normalizer pipeline` command
+5415f71 | Danila Danko | 2024-07-12 | feat(site): document 'atoms' object
+0644182 | Danila Danko | 2024-07-12 | refactor(site): improve wording
+eb365d5 | github-actions[bot] | 2024-07-12 | Update normalizer data files
+ff2301c | Nikolai Kudasov | 2024-07-12 | Fix warning
+ed14395 | Nikolai Kudasov | 2024-07-12 | Allow user-defined prefix for fresh attirbute names
+3afa999 | Nikolai Kudasov | 2024-07-12 | Make YamlSpec stricter, but with better error messages
+b20ae4d | Nikolai Kudasov | 2024-07-12 | Add one-hole contexts
+33b835f | Nikolai Kudasov | 2024-07-12 | Support minimal streams example
+ffe4119 | Danila Danko | 2024-07-11 | fix(normalizer): make fourmolu happy
+a592d2e | Danila Danko | 2024-07-11 | refactor(normalizer): move defaultContext
+7d66b9a | Danila Danko | 2024-07-11 | refactor(normalizer): use a map with function parameters
+bd0df2d | Danila Danko | 2024-07-10 | refactor(normalizer): make fourmolu happy
+f4b199a | Danila Danko | 2024-07-10 | fix(normalizer): not evaluate only known and disabled atoms
+29a5ba4 | github-actions[bot] | 2024-07-10 | Update normalizer data files
+2638035 | github-actions[bot] | 2024-07-10 | Update pipeline/pipeline.lock
+3238e9a | Danila Danko | 2024-07-10 | fix(pipeline): temporarily disable seq-tests because normalizer hangs
+f12dd92 | Danila Danko | 2024-07-10 | feat(pipeline): run only enabled test sets
+4fc506b | Danila Danko | 2024-07-10 | feat(normalizer): print whether a test set is enabled
+eaae945 | Danila Danko | 2024-07-10 | fix(pipeline): file paths
+1bbee65 | Danila Danko | 2024-07-10 | feat(normalizer): support printing dataize configs on a single line
+1825c95 | Danila Danko | 2024-07-10 | fix(pipeline): use eval to construct an array
+310215f | Danila Danko | 2024-07-10 | fix(normalizer): use known atoms instead of supported
+24beb65 | Danila Danko | 2024-07-10 | chore(eo): bump 0.38.3 -> 0.38.4
+3858c86 | Danila Danko | 2024-07-10 | chore(normalizer): update .cabal
+7134c09 | Danila Danko | 2024-07-05 | fix(normalizer): update import to make fourmolu happy
+7d4ca89 | Danila Danko | 2024-07-05 | feat(scripts): add variable
+d14f000 | Danila Danko | 2024-07-05 | feat(scripts): enable -x flag
+77a001a | Danila Danko | 2024-07-05 | fix(scripts): use the new 'normalizer pipeline' command
+d6df7aa | Danila Danko | 2024-07-05 | feat(normalizer): add 'pipeline' commands - move existing command for preparing tests into the 'pipeline' command - add command for printing 'normalizer dataize' configs into the 'pipeline' command
+d42f8f8 | Danila Danko | 2024-07-05 | fix(normalizer): move filtering lambdas to another function
+c9a8713 | Danila Danko | 2024-07-05 | fix(normalizer): logic for enabling/disabling atoms - calculate and store in the dataization context only enabled atoms
+206efa1 | Danila Danko | 2024-07-05 | feat(normalizer): print configs for dataization in pipeline
+9db42de | Danila Danko | 2024-07-05 | feat(normalizer): allow configuring atoms in pipeline config
+75ddd6e | Danila Danko | 2024-07-05 | fix(normalizer): disallow missing fields in configs
+726d9b9 | Danila Danko | 2024-07-01 | feat(normalizer): support disabling particular atoms
+876233c | Danila Danko | 2024-07-01 | feat(normalizer): add dependencies
+0dcc2f3 | renovate[bot] | 2024-06-24 | chore(deps): update baptiste0928/cargo-install action to v3.1.1
+fe58318 | eyihluyc | 2024-06-18 | Update the decoration rule
+11d8633 | eyihluyc | 2024-06-17 | Update `R_φ` to insert `.φ`
+8e6b5ac | eyihluyc | 2024-06-17 | Change `Φ-dispatch` according to Yegor's suggestion in phi-paper
+93bd003 | eyihluyc | 2024-06-17 | Align reductions from applications to `⊥` with phi-paper
+67e45e7 | Danila Danko | 2024-06-13 | fix(changelog): typo in a link
+6992be9 | Danila Danko | 2024-06-13 | fix(changelog): - extend change descriptions - add missing PRs
+d067156 | Danila Danko | 2024-06-12 | chore(eo-phi-normalizer): bump version 0.4.0 -> 0.4.1
+6cfbea4 | Danila Danko | 2024-06-12 | feat(changelog): add notes for 0.4.1
+cd25032 | Danila Danko | 2024-06-12 | fix(ci): work around the `upload-artifact ` path logic
+8d06f06 | renovate[bot] | 2024-06-11 | chore(deps): update dependency prettier to v3.3.2
+45311ce | Danila Danko | 2024-06-10 | fix(normalizer): disable some html when priting markdown
+e1a50fb | Danila Danko | 2024-06-10 | fix(ci): get the report path from the pipeline config
+46c88c9 | Danila Danko | 2024-06-10 | fix(ci): report directory
+096468a | eyihluyc | 2024-06-09 | Add rule names, delete parent application, comment out 6a
+09d353b | Nikolai Kudasov | 2024-06-06 | Revert "Add non-IO support for stdout"
+4fe66d6 | Nikolai Kudasov | 2024-06-06 | Add non-IO support for stdout
+74fc73f | Nikolai Kudasov | 2024-06-06 | Support up to 3 positional arguments
+4eabda7 | Nikolai Kudasov | 2024-06-06 | Update site
+65300c1 | Nikolai Kudasov | 2024-06-06 | Improve pretty-printer
+849a2b5 | Nikolai Kudasov | 2024-06-06 | Use integer division truncated toward zero to match EO
+ec15b30 | Nikolai Kudasov | 2024-06-06 | Fix bool bytes representation to match EO
+eb88853 | Nikolai Kudasov | 2024-06-06 | Fix encoding for strings
+b235660 | Nikolai Kudasov | 2024-06-05 | Wrap termination when wrapping raw bytes
+910498f | Nikolai Kudasov | 2024-06-05 | Fix dataization for nested application/dispatch
+285600d | Nikolai Kudasov | 2024-06-05 | Add handling for termination in fastYegorInsideOut
+cf04b8c | Nikolai Kudasov | 2024-06-05 | Fix dataization inside application/dispatch for bytes
+0e72aae | Nikolai Kudasov | 2024-06-05 | Remove redundant computation for applications
+0b628ce | Danila Danko | 2024-06-05 | fix(site): file path
+bee2222 | Nikolai Kudasov | 2024-06-05 | Always evaluate bindings in applications
+cf21012 | Nikolai Kudasov | 2024-06-05 | Fix normalization for bad applications
+e93c75d | Nikolai Kudasov | 2024-06-05 | Use --wrap-raw-bytes in pipeline
+465c0e8 | Nikolai Kudasov | 2024-06-05 | Add --wrap-raw-bytes flag
+baa86b9 | Danila Danko | 2024-06-05 | fix(scripts): copy phi files to the correct directory
+e5eefbf | Danila Danko | 2024-06-05 | fix(package.json): bump eolang version
+d86c83b | Nikolai Kudasov | 2024-06-05 | Pretty-print formations
+ffb8910 | Nikolai Kudasov | 2024-06-05 | Keep terms unchanged when dataization of atoms fails
+a09e6b5 | Nikolai Kudasov | 2024-06-05 | Fix dataization inside phi (for --minimize-stuck-terms), improve logging for atoms
+0467d75 | Nikolai Kudasov | 2024-06-05 | Remove top-level Package from the result of dataization
+83e70be | Danila Danko | 2024-06-04 | chore(normalizer): bump version to 0.4.0
+3bc4855 | Danila Danko | 2024-06-04 | fix(changelog): use more precise wording
+e9e5242 | Danila Danko | 2024-06-03 | feat(changelog): add notes for 0.4.0
+5a8faa3 | Danila Danko | 2024-05-31 | fix(ci): check whether on master
+c62d9d0 | Nikolai Kudasov | 2024-05-31 | Speed up the use of builtin version
+c715538 | Nikolai Kudasov | 2024-05-31 | Do not apply rules under rho-bindings (Common)
+228ad6c | Nikolai Kudasov | 2024-05-31 | Use fast Yegor's rules when rule set is not specified
+2c85def | Nikolai Kudasov | 2024-05-30 | Update site's celcius example
+6df20eb | Nikolai Kudasov | 2024-05-30 | Simplify Rule 5
+433f4eb | Nikolai Kudasov | 2024-05-30 | Fix warnings
+44954f2 | Nikolai Kudasov | 2024-05-30 | Add fastest specialized normalization
+48a34fd | Nikolai Kudasov | 2024-05-30 | Do not apply rules under rho-bindings
+49c1b61 | Danila Danko | 2024-05-24 | feat(site): add a section about issues
+81888c7 | Danila Danko | 2024-05-24 | fix(site): - Add a code quality section - Explain pre-commit hooks
+5e3fd82 | Danila Danko | 2024-05-24 | fix(site): use definite articles
+f2fef2a | Danila Danko | 2024-05-24 | fix(site): describe more pipeline directory entries
+99d69cc | Danila Danko | 2024-05-24 | fix(ci): artifact paths
+26161b2 | Danila Danko | 2024-05-24 | fix(pipeline): update lock
+b3219d0 | Danila Danko | 2024-05-24 | feat(normalizer): add data files to .cabal
+0e47119 | Danila Danko | 2024-05-24 | fix(site): update pipeline docs
+58bedd9 | Danila Danko | 2024-05-24 | refactor(site): reuse `enter-repository.md`
+5e28a41 | Danila Danko | 2024-05-24 | fix(normalizer): field name
+71d4889 | Danila Danko | 2024-05-24 | fix(site): fix section names
+0f7c564 | Danila Danko | 2024-05-24 | fix(pipeline): eo-yaml file paths
+1b5268c | Danila Danko | 2024-05-24 | fix(site): wording
+86105ec | Nikolai Kudasov | 2024-05-24 | Improve the use of minimizeObject'
+f8d0a8d | Nikolai Kudasov | 2024-05-24 | Update dataization tests
+05ab217 | Nikolai Kudasov | 2024-05-24 | Preserve all attributes when dispatching
+1e8e1e6 | Nikolai Kudasov | 2024-05-24 | Revert manual changes to int
+123bfb6 | Danila Danko | 2024-05-24 | fix(site): - reuse `enter-repository.md` - add sections - write the executable name
+bc96bf6 | Danila Danko | 2024-05-24 | fix(ci): report path
+86af0f9 | Danila Danko | 2024-05-24 | fix(scripts): - variable names - directory paths
+e22e6b5 | Danila Danko | 2024-05-24 | fix(pipeline): PHI file paths
+877a28d | Nikolai Kudasov | 2024-05-24 | Add unitilies to hide rho
+7ac38af | Nikolai Kudasov | 2024-05-24 | Fix sliceBytes to slice at bytes, not half-bytes
+0a85b25 | Nikolai Kudasov | 2024-05-24 | Fix shift
+1547e35 | Nikolai Kudasov | 2024-05-24 | Fix definition of int.neg for 0.38.0
+6c21d8f | Nikolai Kudasov | 2024-05-24 | Use uniform shift instead of shiftR to avoid arithmetic overflow errors
+2b9f299 | Danila Danko | 2024-05-24 | fix(pipeline): EO filtered file paths
+725203a | Nikolai Kudasov | 2024-05-24 | Comment out 'Running ...' output
+7545436 | Danila Danko | 2024-05-24 | fix(normalizer): pipeline config field names
+c6b825c | Danila Danko | 2024-05-24 | fix(pipeline): config key names
+6758e48 | Nikolai Kudasov | 2024-05-24 | Fix warnings
+908588c | Nikolai Kudasov | 2024-05-24 | Fix warnings
+b29d8b4 | Nikolai Kudasov | 2024-05-24 | Fix comment for applyRulesInsideOut
+a9d656c | Nikolai Kudasov | 2024-05-24 | Use faster normalization when dataizing
+b255006 | Danila Danko | 2024-05-23 | fix(site): LTS version
+cdfb3c8 | Danila Danko | 2024-05-23 | fix(normalizer): formatting
+fc3f8bb | Danila Danko | 2024-05-23 | fix(normalizer): - integrate transform-eo-tests into normalizer as the 'prepare-pipeline-tests' command - update configs - remove old files - remove old functions
+5db37ab | Danila Danko | 2024-05-23 | fix(pipeline): paths in config
+489f5b1 | Danila Danko | 2024-05-22 | fix(pipeline): merge report and pipeline configs into pipeline config
+bc11fe7 | Danila Danko | 2024-05-22 | feat(normalizer): add a column for test indices
+ae60da7 | Danila Danko | 2024-05-22 | fix(normalizer): use a standard HTML page structure in the report
+3dcd5ed | Danila Danko | 2024-05-22 | feat(normalizer): show report progress
+9049028 | Danila Danko | 2024-05-22 | refactor(normalizer): fix formatting
+1bd1e66 | Nikolai Kudasov | 2024-05-22 | Disable io atoms
+63ec94d | Danila Danko | 2024-05-21 | fix(scripts): make clean directories
+074e61b | Danila Danko | 2024-05-21 | fix(normalizer): remove unused LANGUAGE pragma
+88d8e1a | Danila Danko | 2024-05-21 | fix(scripts): use perl
+ce61dcf | Danila Danko | 2024-05-21 | fix(scripts): install normalizer only when not installed
+8e41589 | Danila Danko | 2024-05-21 | fix(ci): rename a constant
+db36ffc | Danila Danko | 2024-05-21 | fix(ci): use constant
+ba5b36e | Danila Danko | 2024-05-21 | fix(ci): use script for checking syntax files
+2b6ce3a | Danila Danko | 2024-05-21 | feat(scripts): function to check whether syntax files exist
+7ab60e4 | Danila Danko | 2024-05-21 | fix(ci): use a global constant for Syntax path
+6cdf577 | Danila Danko | 2024-05-21 | fix(scripts): directory paths
+4b66893 | Danila Danko | 2024-05-21 | fix(scripts): - remove ansi color escape codes from logs - remove NULL characters
+400ebd9 | Danila Danko | 2024-05-21 | fix(scripts): save into a string
+a89444e | github-actions[bot] | 2024-05-21 | Update pipeline/pipeline.lock
+59452b9 | Danila Danko | 2024-05-21 | feat(ci): report failing tests
+8106df5 | Danila Danko | 2024-05-21 | feat(scripts): add functions to collect failing test names from logs
+1c5fb9f | Danila Danko | 2024-05-21 | feat(scripts): write 'eoc test' logs to files
+1c009b1 | Danila Danko | 2024-05-21 | fix(pipeline): update lock
+cdb4d4d | Danila Danko | 2024-05-21 | fix(pipeline): enable more tests
+2a31b69 | Nikolai Kudasov | 2024-05-18 | Fix doctests for NaN (allow both qNaN and sNaN)
+b82779a | Nikolai Kudasov | 2024-05-17 | Fix doctests
+97ad119 | Nikolai Kudasov | 2024-05-17 | Fix dataization tests for float
+6688faf | Nikolai Kudasov | 2024-05-17 | Use --minimize-stuck-terms flag in the pipeline
+2724e34 | Nikolai Kudasov | 2024-05-17 | Add --minimize-stuck-terms flag to avoid explosion of some stuck terms
+1b49e02 | Nikolai Kudasov | 2024-05-15 | Use normalizeBytes in concatBytes (to avoid looking for the problem elsewhere)
+a0b7b27 | Nikolai Kudasov | 2024-05-15 | Factor out sliceBytes
+35ba56b | Nikolai Kudasov | 2024-05-15 | Fix bytes concatenation
+ff25275 | Nikolai Kudasov | 2024-05-15 | Implement Lorg_eolang_dataized, put warning for unknown atoms
+d3599cc | Nikolai Kudasov | 2024-05-15 | Fix encoding/decoding for Bytes
+014a9de | Nikolai Kudasov | 2024-05-14 | Add --as-package flag
+ade0c7b | Nikolai Kudasov | 2024-05-14 | Turn on --as-package when running the pipeline
+ad23239 | Nikolai Kudasov | 2024-05-14 | Do not apply Rule 8 inside formations
+7ba4f44 | Nikolai Kudasov | 2024-05-14 | Fix Rule 8 tests
+c0ec973 | Nikolai Kudasov | 2024-05-14 | Update dataization tests
+b35f5ab | Nikolai Kudasov | 2024-05-14 | Make sure boolean atom results are boolean
+6375481 | Nikolai Kudasov | 2024-05-14 | Increase default limits
+d760436 | Nikolai Kudasov | 2024-05-14 | Fix Rule 8, add support for two positional arguments (fixes .if)
+4bc1a1c | Nikolai Kudasov | 2024-05-14 | Fix handling xi when dataizing inside phi
+238804c | Nikolai Kudasov | 2024-05-14 | Force at least one normalization step when dataizing arguments to atoms
+dabeff8 | Nikolai Kudasov | 2024-05-14 | Fix Lorg_eolang_bytes_eq
+e4b0606 | Danila Danko | 2024-05-17 | fix(scripts): copy new pipeline lock so that it can be hashed in ci
+1ea371b | Danila Danko | 2024-05-17 | fix(ci): enable `--pedantic`
+e59f6a0 | Danila Danko | 2024-05-17 | fix(ci): override default `--fast --pedantic` with `--pedantic`
+20dd1bd | Danila Danko | 2024-05-17 | fix(ci): remove --prefetch
+67d16c6 | Danila Danko | 2024-05-17 | fix(ci): use one input
+5049df6 | Danila Danko | 2024-05-17 | fix(ci): run only tests and force stack to rebuild
+69fcbbf | Danila Danko | 2024-05-17 | fix(normalizer): increase the verbosity of the command and fix it for Windows
+ce66ec5 | Danila Danko | 2024-05-17 | fix(ci): save pipeline files ASAP
+fe84459 | Danila Danko | 2024-05-17 | fix(ci): save syntax files ASAP
+f7e575d | Danila Danko | 2024-05-17 | fix(ci): run tests on a separate step
+998fbac | Danila Danko | 2024-05-17 | fix(scripts): generate eo files only when lock changed
+c1888c9 | Danila Danko | 2024-05-17 | fix(ci): check that syntax files exist
+a409bb9 | Danila Danko | 2024-05-17 | fix(ci): use non-empty strigs because they're truthy
+1a039d5 | Danila Danko | 2024-05-17 | try(ci): cache syntax files
+2057e19 | Danila Danko | 2024-05-17 | fix(normalizer): run a bash command in Setup.hs
+725d5e4 | Danila Danko | 2024-05-17 | fix(ci): set code page before stack-action
+4b3333f | Danila Danko | 2024-05-16 | fix(ci): artifact logic
+0e434ec | Danila Danko | 2024-05-16 | feat(site): write about cygpath on the site
+3f40201 | Danila Danko | 2024-05-16 | fix(scripts): cygpath name
+c33d373 | Danila Danko | 2024-05-16 | fix(ci): run tests and pipeline in separate jobs
+da39299 | Danila Danko | 2024-05-16 | fix(ci): commit files only in case of success
+1c3d707 | Danila Danko | 2024-05-16 | fix(git): line endings in pipeline.lock
+25ea6ce | Danila Danko | 2024-05-16 | refactor(ci): install yq and check pipeline lock when necessary
+cf79b67 | Danila Danko | 2024-05-16 | refactor(scripts): calculate EO version when necessary to not require yq
+61eb977 | Danila Danko | 2024-05-16 | fix(scripts, lib): set UTF-8 in lib
+c93cce5 | Danila Danko | 2024-05-16 | fix(scripts, ci): pipeline lock code
+626f52e | Danila Danko | 2024-05-16 | fix(ci): artifact name
+07a3acd | Danila Danko | 2024-05-16 | fix(ci): - step id - cache key - artifact name
+b49c50a | Danila Danko | 2024-05-16 | fix(scripts): install normalizer at the beginning of the pipeline
+650406f | Danila Danko | 2024-05-16 | fix(scripts): set installation path in the pipeline script where stack is guaranteed to be set up
+f4612b1 | Danila Danko | 2024-05-16 | fix(scripts): improve messages
+63e0668 | Danila Danko | 2024-05-16 | fix(ci): install yq before running scripts
+8eda3a7 | Danila Danko | 2024-05-16 | fix(scripts): use local variables
+8ea2382 | Danila Danko | 2024-05-16 | fix(ci): installation logic
+13f1279 | Danila Danko | 2024-05-16 | fix(scripts): installation logic
+38c22d6 | Danila Danko | 2024-05-16 | fix(lib): disable strict errors
+87940c1 | Danila Danko | 2024-05-15 | fix(ci): search path
+ba59398 | Danila Danko | 2024-05-15 | fix(scripts): - use find instead of ls - conditionally install normalizer
+3aeea39 | Danila Danko | 2024-05-15 | refactor(scripts): set installation path in lib
+9cb5605 | Danila Danko | 2024-05-15 | fix(ci): install normalizer once
+acd9d7b | Danila Danko | 2024-05-15 | fix(scripts): install normalizer conditionally
+1a4e5bc | Danila Danko | 2024-05-15 | feat(scripts): add constants
+34ed63a | Danila Danko | 2024-05-15 | fix(scripts): use normalizer executable
+38ac94f | Danila Danko | 2024-05-15 | fix(ci): use script where installation is handled
+e0928a3 | Danila Danko | 2024-05-15 | refactor(scripts): install normalizer in a separate step
+f0d3dc8 | Danila Danko | 2024-05-15 | fix(ci): use relative paths
+9072456 | Danila Danko | 2024-05-15 | feat(scripts): add constants for relative paths to lib
+7378a0b | Danila Danko | 2024-05-15 | fix(ci): set PATH on Windows
+92b3fc8 | Danila Danko | 2024-05-15 | fix(scripts): stop on errors
+d3cbf52 | Danila Danko | 2024-05-15 | fix(scripts): use a constant
+30eb902 | Danila Danko | 2024-05-15 | fix(ci): setup yq
+8ce052e | Danila Danko | 2024-05-15 | refactor(scripts, ci): - use constants - use absolute paths
+b8c8bc4 | Danila Danko | 2024-05-15 | refactor(scripts): - use lib functions - use constants
+35b4191 | Danila Danko | 2024-05-15 | refactor(scripts): use lib constant and function
+253f32d | Danila Danko | 2024-05-15 | feat(scripts): - add EO version constant - add eo function
+19e67fd | Danila Danko | 2024-05-15 | fix(scripts): pass arguments to eoc
+7ce29d5 | Danila Danko | 2024-05-15 | refactor(scripts): use lib
+05d702a | Danila Danko | 2024-05-15 | fix(scripts): default import_dir
+6e69307 | Danila Danko | 2024-05-15 | fix(ci): prefix pipeline cache
+fc6c0f6 | Danila Danko | 2024-05-15 | fix(ci): set PATH on macOS
+1d1cf5d | Danila Danko | 2024-05-15 | fix(ci): use comparisons in both expressions
+4045c68 | Danila Danko | 2024-05-15 | fix(ci): use a comparison expression
+b4acdcd | Danila Danko | 2024-05-15 | fix(ci): use a ternary expression
+538ba83 | Danila Danko | 2024-05-15 | fix(scripts, ci): force pipeline_lock_changed if no cache hit
+652b79f | Danila Danko | 2024-05-15 | refactor(scripts): use constants
+b1f837f | Danila Danko | 2024-05-15 | refactor(ci): use a lib function
+46b08ce | Danila Danko | 2024-05-15 | feat(ci): add step to commit updated pipeline lock
+4af9292 | Danila Danko | 2024-05-15 | feat(ci): add steps to restore and cache pipeline files
+e1c9ea6 | Danila Danko | 2024-05-15 | feat(scripts): add function to commit and push changed files
+e366e94 | Danila Danko | 2024-05-15 | fix(ci): let the pipeline script calculate EO version
+fc41efa | Danila Danko | 2024-05-15 | refactor(scripts): move update_pipeline_lock to lib to simplify GH workflow
+fab23ad | Danila Danko | 2024-05-14 | fix(pipeline): - move some functions to lib - use pipeline lock to decide whether to run tests without normalization - some directories - don't clean directories in "normalize"
+fa16ee6 | Danila Danko | 2024-05-14 | feat(gitignore): unignore pipeline lock
+acf00c3 | Danila Danko | 2024-05-14 | feat(scripts): add a library
+746e92a | Danila Danko | 2024-05-14 | feat(vscode): add shellcheck setting to allow script imports
+91204af | Danila Danko | 2024-05-14 | feat(pipeline): add pipeline.lock that tracks eo and pipeline config
+32c9d30 | Danila Danko | 2024-05-14 | fix(pipeline): run normalizer executable instead of "stack run"
+eb0d312 | Danila Danko | 2024-05-14 | fix(pipeline): shellcheck warnings
+6066113 | Danila Danko | 2024-05-14 | fix(pipeline): clean output directory at each step
+50c61cc | Danila Danko | 2024-05-14 | try(ci): don't build before test
+368c101 | Danila Danko | 2024-05-14 | chore(eo): bump to the version 0.38.0
+6559966 | Danila Danko | 2024-05-14 | fix(ci): run tests in utf8 on Windows
+86e2870 | Danila Danko | 2024-05-14 | Merge remote-tracking branch 'origin' into 185-enable-tests-on-windows-runners
+e0e00af | Danila Danko | 2024-05-14 | fix(ci): run tests outside of stack-action
+6c4a71d | Danila Danko | 2024-05-14 | fix(normalizer): in Setup.hs - generate Syntax files every time - check that the command succeeds - set UTF8 when running on Windows - run a single-line command (no idea why next commands don't run after chcp)
+46e5e7c | renovate[bot] | 2024-05-14 | Update dependency pre-commit to v3.7.1
+46565c0 | Danila Danko | 2024-05-14 | fix(normalizer): use with-utf8 in tests
+7679ef4 | Danila Danko | 2024-05-14 | fix(normalizer): use with-utf8 in app
+97f4e95 | Abdelrahman Abounegm | 2024-05-13 | Update dependencies to v0.38.0
+9c06922 | github-actions[bot] | 2024-05-13 | Update Markdown files
+f973c51 | Abdelrahman Abounegm | 2024-05-13 | Update Celsius example in documentation
+8faddeb | github-actions[bot] | 2024-05-13 | Update Markdown files
+2812d60 | Abdelrahman Abounegm | 2024-05-13 | Use full program size as limit for object growth
+3a6d4ca | Abdelrahman Abounegm | 2024-05-13 | Add dependencies merging to dataization tests
+9845af8 | Abdelrahman Abounegm | 2024-05-13 | Rewrite the celsius example using floats
+74f14ab | Abdelrahman Abounegm | 2024-05-13 | Move dependencies merging to a separate module
+68c7179 | Abdelrahman Abounegm | 2024-05-13 | Add a log when hitting max term size
+8b70739 | Abdelrahman Abounegm | 2024-05-13 | Revert "Simplify lambda evaluation by not wrapping bytes"
+13a52ab | github-actions[bot] | 2024-05-13 | Update normalizer data files
+06ed957 | Abdelrahman Abounegm | 2024-05-13 | Update EO to release 0.38.0
+b1fe8ba | github-actions[bot] | 2024-05-13 | Update Markdown files
+46ab725 | Abdelrahman Abounegm | 2024-05-13 | Remove the sigma attribute from syntax
+310b55e | Abdelrahman Abounegm | 2024-05-13 | Remove the vertex attribute from syntax
+2f91e8b | renovate[bot] | 2024-05-11 | chore(deps): update dependency eolang to ^0.19.0
+e02192c | Abdelrahman Abounegm | 2024-05-09 | Implement IO atoms
+aeb9d4c | Abdelrahman Abounegm | 2024-05-09 | Implement Lorg_eolang_error atom
+dcc8308 | Abdelrahman Abounegm | 2024-05-08 | Add a few unit tests for some atoms
+01342a2 | Abdelrahman Abounegm | 2024-05-08 | Fix the definition of boolToBytes
+d8d9975 | Abdelrahman Abounegm | 2024-05-08 | Fix possible infinite dataization loop
+8fe9717 | Abdelrahman Abounegm | 2024-05-08 | Fix order of parameters passed to binary function
 a973727 | github-actions[bot] | 2024-05-06 | Update normalizer data files
 d37229d | Nikolai Kudasov | 2024-05-07 | Fix confluence in the current rules
 e4bd4dc | Nikolai Kudasov | 2024-05-07 | Improve dataization spec
 07f8309 | Nikolai Kudasov | 2024-05-07 | Improve Arbitrary to properly take size into account
+5711e5a | github-actions[bot] | 2024-05-03 | Update Markdown files
+333ad34 | Abdelrahman Abounegm | 2024-05-03 | Fix bytes format in tests
+2fd240b | Abdelrahman Abounegm | 2024-05-03 | Implement slice, right, and concat functions
+896d6bc | Abdelrahman Abounegm | 2024-05-03 | Simplify lambda evaluation by not wrapping bytes
+11c6438 | Abdelrahman Abounegm | 2024-05-03 | Fix bytes wrapping in int and float
 e57c2ed | Danila Danko | 2024-05-03 | fix(normalizer): error about incomplete patterns
 868223a | github-actions[bot] | 2024-05-03 | Update Markdown files
 e31c280 | Nikolai Kudasov | 2024-05-03 | Apply suggestions from code review
@@ -24,10 +345,23 @@ ced39af | eyihluyc | 2024-04-28 | Add error messages, handle `⊥`, replace `\al
 8620579 | Danila Danko | 2024-04-25 | fix(ci): pipeline and report configs
 491e332 | github-actions[bot] | 2024-04-25 | Update Markdown files
 a343384 | eyihluyc | 2024-04-25 | Add support for latex output in `transform` and `dataize --chain` (#255)
+1a7c4e7 | Abdelrahman Abounegm | 2024-04-24 | Convert all bytes to uppercase to fix lexer error
+07745e4 | Abdelrahman Abounegm | 2024-04-24 | Add a simple test for int time/plus
 11b599d | Abdelrahman Abounegm | 2024-04-24 | Remove redundant GHC option
 f92ce7c | Abdelrahman Abounegm | 2024-04-24 | Fix unit tests for substitution
 33045f8 | Abdelrahman Abounegm | 2024-04-24 | Add rule to match positional args in application
+4aab91e | Abdelrahman Abounegm | 2024-04-24 | Remove casting atoms that are no longer needed
 7780e05 | Danila Danko | 2024-04-24 | chore(eo): update 0.36.0 -> 0.37.0
+0d109ef | Abdelrahman Abounegm | 2024-04-23 | Generalize object dispatcher via label name
+50dbc51 | Abdelrahman Abounegm | 2024-04-23 | Implement float functions
+f21e3b5 | Abdelrahman Abounegm | 2024-04-23 | Fix bytes normalization
+f211551 | Abdelrahman Abounegm | 2024-04-23 | Add the remaining functions as comments
+e60c0ac | github-actions[bot] | 2024-04-22 | Update Markdown files
+0873d71 | Abdelrahman Abounegm | 2024-04-22 | Add some string atoms
+e27db3d | Abdelrahman Abounegm | 2024-04-22 | Implement some functions on bytes
+8d1751e | Abdelrahman Abounegm | 2024-04-22 | Add casting functions
+3348e61 | Abdelrahman Abounegm | 2024-04-22 | Fix function in unary dataization function
+257ddee | Abdelrahman Abounegm | 2024-04-22 | Format Haddock comments with Fourmulo
 45dbed6 | Danila Danko | 2024-04-22 | feat(flake): add mdbook-linkcheck to the default devshell
 dceb0ab | Danila Danko | 2024-04-22 | feat(flake): scripts for working with site docs
 0659383 | Danila Danko | 2024-04-22 | fix(ci): mdbook output directory
@@ -46,6 +380,7 @@ db245b8 | Nikolai Kudasov | 2024-04-19 | Fix context handling for Package atom, 
 4a8292b | Nikolai Kudasov | 2024-04-19 | Add this-substitution to the syntax
 28dd141 | Nikolai Kudasov | 2024-04-19 | Remove missing export list warning
 ccf7ae8 | Nikolai Kudasov | 2024-04-19 | Silent nix-on-path warning
+ca4051e | Abdelrahman Abounegm | 2024-04-19 | Change default argument name from a0 to x
 6b98ee6 | Danila Danko | 2024-04-18 | fix(ci): always build with optimizations to make tests run faster
 004958b | Danila Danko | 2024-04-18 | fix(ci): first run pipeline, then update files
 854cc7b | Danila Danko | 2024-04-18 | fix(ci): set github_token
@@ -81,6 +416,11 @@ e4281a4 | Danila Danko | 2024-04-18 | fix(flake): ignore more generated files
 45beb17 | Danila Danko | 2024-04-17 | refactor(scripts > pipeline): split functions, format, run shellcheck
 444b285 | Danila Danko | 2024-04-17 | fix(scripts > pipeline): calculate eo parser version from the eo-runtime version
 4b054e7 | Danila Danko | 2024-04-17 | fix(pipeline): add --recursive
+bf512d0 | Abdelrahman Abounegm | 2024-04-17 | WIP: bytes dataization functions
+d6e73fa | Abdelrahman Abounegm | 2024-04-17 | Add unary dataization function and improve naming
+a6195cd | Abdelrahman Abounegm | 2024-04-17 | Generalize further to fix type errors
+009b5d8 | Abdelrahman Abounegm | 2024-04-17 | Generalize the core evaluation algorithm
+76e73ca | Abdelrahman Abounegm | 2024-04-17 | Support int atoms
 25fd955 | github-actions[bot] | 2024-04-16 | Update normalizer data files
 b00b472 | Danila Danko | 2024-04-16 | feat(ci): update, commit and push atoms
 831a24d | Danila Danko | 2024-04-16 | fix(ci): don't try to commit and push when no markdown files to commit
