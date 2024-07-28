@@ -1,5 +1,59 @@
 # Meetings with mentor
 
+## 27.06.2024
+
+### Quality
+
+- How did we select this type of tests
+- Customer didn't require maintainability
+- PR Inspections
+- Doctests
+
+### Add
+
+- Code review
+
+## 11.06.2024
+
+- Link issues to Requirements (ASRS)
+  - This is for people from outside
+
+## 26.05.2024
+
+- Issues for the normalizer
+  - For external contributors
+  - For communication with the customer
+  - Traceability
+  
+- Issues for the proof
+  - Track progress
+  - Violetta may take notes
+
+- How much time does it take vs benefits
+  - Track time for two weeks
+  
+- Violetta
+  - Can describe what they do
+  - A WBS
+
+- Ask questions
+- Form hypotheses
+- Collect metrics
+- Answer questions
+
+- Presentation audience
+  - Mentors listen
+  - Mentors read
+
+### Action points
+
+- [ ] Backup slides for mentors when reading
+  - [ ] Add hyperlinks to artifacts
+  - [ ] Add hyperlinks to slides
+- [ ] Make presentation shorter (Пиши, сокращай)
+
+<!-- TODO write questions and provide links with answers to all of them -->
+
 ## 12.05.2024
 
 ### Slides
